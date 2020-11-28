@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Footnotes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="headerLeft">
+            Footnotes
+        </div>
+        <div class="headerRight">
+            A sample document
+        </div>
+
+        <div class="footerLeft">
+            <img src="https://printcss.live/img/logo.png" />
+        </div>
+        <div class="footerRight">
+            <a href="mailto:info@azettl.net">info@azettl.net</a><br />
+            <a href="https://printcss.live/">printcss.live</a>
+        </div>
+
+        <div class="content">
+            <h1>PrintCSS: Footnotes</h1>
+            <p>
+              Footnotes play an important role when it comes to creating books or PDF documents in general. Unfortunately, not all PDF rendering tools are supporting the W3C draft
+              <span class="footnote">Sample Footnote Content</span> 
+              yet. While the commercial tools all have a good integration of the draft, most open-source<span class="footnote">Another Sample Footnote Content</span>  tools lack support for footnotes completely.
+            </p>
+            <p>
+				Still, in this article, I will explain the W3C footnote draft to you, and we will see the rendering result with the different tools.
+            </p>
+            <h2>Terminology</h2>
+
+            <p>
+          		Before we go through some samples, we should first get to know the different terms used.
+            </p>
+
+            <p>
+          		A footnote call is a number or sometimes a symbol in the main text pointing to the footnote's body.
+            </p>
+
+            <p>
+				The footnote body consists of the footnote marker, which is actually the number or symbol from the footnote call. The marker can have extra punctuation. After the marker, we have the footnote element, which is still part of the footnote body. The footnote element is the actual content of the footnote. The content is defined within the text flow but gets removed from there and is shown as a footnote.          
+            </p>
+
+            <p>
+				All your footnotes are in the footnote area, so the area of the page where your footnotes are displayed. Above that area, you can have a horizontal rule, which is called the footnote rule.          
+            </p>
+        </div>
+    </body>
+</html>
