@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Selectors and Page Breaks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="headerLeft">
+        Page Selectors and Page Breaks
+    </div>
+    <div class="headerRight">
+        A sample document
+    </div>
+
+    <div class="footerLeft">
+        <img src="https://printcss.live/img/logo.png" />
+    </div>
+    <div class="footerRight">
+        <a href="mailto:info@azettl.net">info@azettl.net</a><br />
+        <a href="https://printcss.live/">printcss.live</a>
+    </div>
+
+    <div class="cover">
+        <h1>Cover Page</h1>
+    </div>
+
+    <div class="toc">
+        <h1>Table of contents</h1>
+        <a href="#running">PrintCSS: Running Headers and Footers</a>
+        <a href="#toc">PrintCSS: Table of Contents</a>
+        <a href="#footnotes">PrintCSS: Footnotes</a>
+    </div>
+
+    <div class="content">
+        <h1 id="running">PrintCSS: Running Headers and Footers</h1>
+        <p>
+        If you want to use HTML inside the page margin boxes, you will need to use running elements. These elements are normal HTML nodes with the CSS position property set to 'running(NAME)'.
+        </p>
+        <p>
+        The name given to the running element is used within the page margin boxes to set their content to the running elements inner HTML.
+        </p>
+        <p>
+        To do so, you need to set the specific page margin box's CSS content property to 'element(NAME)', where NAME is the given running element name.
+        </p>
+        <p>
+        Elements with the position running do not appear in the document until you assign them to some CSS content property.
+        </p>
+        <p>
+        Your running elements must come first in your HTML structure. For example, if you put the footer element before the closing body tag, the running footer will only appear on the last page.
+        </p>
+
+        <h1 id="toc">PrintCSS: Table of Contents</h1>
+
+        <p>A very common use case for your PrintCSS document is creating a table of contents. But how would you know the page numbers of your chapters before you render the document? The content takes as many pages as it needs and if your content is dynamic it is impossible to say how many pages a chapter would result in.</p>
+
+        <h1 id="footnotes">PrintCSS: Footnotes</h1>
+        
+        <p>Footnotes play an important role when it comes to creating books or PDF documents in general. Unfortunately, not all PDF rendering tools are supporting the W3C draft yet. While the commercial tools all have a good integration of the draft, most open-source tools lack support for footnotes completely.</p>
+        <p>Still, in this article, I will explain the W3C footnote draft to you, and we will see the rendering result with the different tools.</p>
+    </div>
+  </body>
+</html>
