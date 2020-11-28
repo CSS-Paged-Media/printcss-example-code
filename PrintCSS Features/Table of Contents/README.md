@@ -4,4 +4,4 @@
 
 ## Video
 
-[PrintCSS: Counter and Cross References on YouTube](https://youtu.be/xk5lgnE1HS8)
+No video yet. [Issue #2](https://github.com/azettl/printcss.examples/issues/2)

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Counter and Cross References</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="headerLeft">
+            Counter and Cross References
+        </div>
+        <div class="headerRight">
+            A sample document
+        </div>
+
+        <div class="footerLeft">
+            <img src="https://printcss.live/img/logo.png" />
+        </div>
+        <div class="footerRight">
+            <a href="mailto:info@azettl.net">info@azettl.net</a><br />
+            <a href="https://printcss.live/">printcss.live</a>
+        </div>
+
+        <div class="content">
+            <h1>PrintCSS: Target Counters</h1>
+			<a href="#marker">Target Counters</a>
+
+			<OL>                    <!-- {item[0]=0        -->
+			  <LI>item</LI>         <!--  item[0]++ (=1)   -->
+			  <LI>item              <!--  item[0]++ (=2)   -->
+				<OL>                <!--  {item[1]=0       -->
+				  <LI>item</LI>     <!--   item[1]++ (=1)  -->
+				  <LI id="marker">item</LI>     <!--   item[1]++ (=2)  -->
+				  <LI>item      
+					<OL><!--   {item[2]=0      -->
+					  <LI>item</LI> <!--    item[2]++ (=1) -->
+					  <LI>item</LI> <!--    item[2]++ (=2) -->
+					</OL>
+				  </LI>             <!--   }               -->
+				  <LI>item</LI>     <!--   item[1]++ (=4)  -->
+				</OL>               <!--                   -->
+			  </LI>                 <!--  }                -->
+			  <LI>item</LI>         <!--  item[0]++ (=3)   -->
+			  <LI>item</LI>         <!--  item[0]++ (=4)   -->
+			</OL>                   <!--                   -->
+			<OL>                    <!-- }{item[0]=0       -->
+			  <LI>item</LI>         <!--  item[0]++ (=1)   -->
+			  <LI>item</LI>         <!--  item[0]++ (=2)   -->
+			</OL>                   <!--                   -->
+        </div>
+    </body>
+</html>
