@@ -1,0 +1,241 @@
+/*
+	Standard Style for W3C Paged Media Viewer ver.0.2.2 or later.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&display=swap');
+
+:root {
+	/* user settings */
+	--mvc-spread-view: 0;
+
+	/* extension default settings */
+	--mvc-page-margin: 5mm;
+	--mvc-page-width: calc(var(--pagedjs-width) + 2 * var(--mvc-page-margin));
+	--mvc-screen-width: calc(var(--mvc-page-width) * (1 + var(--mvc-spread-view)));
+}
+
+html {
+	font-size: 11.75pt !important;
+	font-weight: 100 !important;
+	line-height: 1.6 !important;
+	padding: 0 !important;
+}
+
+body {
+	padding: 0 !important;
+	margin: 0 !important;
+	color: black !important;
+}
+
+@page {
+	size: 21cm 21cm;
+	margin:2cm;
+    
+	@bottom-right {
+		content: counter(page);
+	}
+}
+
+@page:first{
+	margin:0;
+	
+	@bottom-right {
+		content: "";
+	}
+}
+
+@page:blank{
+	@bottom-right {
+		content: "";
+	}
+}
+
+@page RecipeImage{
+    margin:0;
+
+	@bottom-right {
+		content: "";
+	}
+}
+
+
+@page TableOfContents{
+	@bottom-right {
+		content: "";
+	}
+}
+
+@media screen {
+	.pagedjs_pages {
+		display: flex;
+		width: var(--mvc-screen-width);
+		margin: 0 auto;
+		background-color:gray !important;
+		flex: 0;
+		flex-wrap: wrap;
+	}
+	.pagedjs_page {
+		margin: var(--mvc-page-margin);
+		background-color: white;
+		box-shadow: 0 .5mm 2mm rgba(0, 0, 0, 0.5);
+		flex-shrink: 0;
+		flex-grow: 0;
+	}
+	.pagedjs_first_page {
+		margin-left: calc(var(--mvc-screen-width) - var(--mvc-page-width) + var(--mvc-page-margin))
+	}
+}
+
+.cover{
+	position: relative;
+	break-inside: avoid;
+	break-after: always;
+}
+
+.covertitle{
+	background-color: #183e59;
+	color:#fff;
+	position:absolute;
+	top:0;
+	right:2cm;
+	width: 10cm;
+	padding:2cm .5cm .5cm .5cm;
+	text-align: center;
+	border-bottom-left-radius: 10% 10%;
+	border-bottom-right-radius: 10% 10%;
+}
+
+.covertitle h1{
+	border-bottom:none;
+	font-size: 48pt;
+	margin:0;
+}
+
+.covertitle h1 strong{
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-weight: normal;
+	display: block;
+	font-size: 42pt;
+}
+
+.covertitle h2{
+	border-bottom: 1px solid #fff;
+	padding-bottom:.5cm;
+	font-family: Oswald;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	margin-top:0;
+}
+
+.covertitle h3{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-family: Oswald;
+	text-transform: uppercase;
+	padding:.5cm 0;
+}
+
+.covertitle h3 strong{
+	font-family: 'Pacifico', cursive;
+	font-weight: normal;
+	text-transform: initial;
+	display: block;
+}
+
+h4{
+	page: RecipeImage;
+	page-break-before: always;
+	break-before:always;
+	font-family: Oswald;
+	font-size: 18pt;
+	text-align: center;
+	margin-top: 6cm;
+}
+
+h4 a{
+	color:black;
+	text-decoration: none;
+}
+
+h4 em{
+	font-family: 'Pacifico', cursive;
+	display: block;
+	margin-top:1cm;
+}
+
+.cover img{
+	min-width:auto;
+	min-height:210mm;
+}
+
+.recipeImage{
+	page: RecipeImage;
+	break-before: left;
+}
+
+.recipes{
+	break-before: always;
+	font-family: Oswald;
+}
+
+.recipes h2 strong{
+	font-family: Oswald;
+	font-size:12pt;
+}
+
+.cocktailtaste{
+	background-color: #183e59;
+	color:#fff;
+	position:absolute;
+	top:-2cm;
+	right:1cm;
+	width: 4cm;
+	padding:.5cm;
+	text-align: center;
+	border-bottom-left-radius: 10% 10%;
+	border-bottom-right-radius: 10% 10%;
+}
+
+.cocktailtaste h1{
+	margin:0;
+	font-family: Oswald;
+}
+
+li{
+	font-size:12pt;
+}
+
+em:first-of-type{
+	margin-left:0 !important;
+}
+
+em{
+	margin-left:2mm;
+}
+
+h2{
+	margin-top:10mm;
+}
+
+h1{
+	border-bottom:none;
+}
+
+h1,
+h2,
+h3{
+	font-family: 'Pacifico', cursive;
+}
+
+h2{
+	font-size:18pt;
+}
+
+h3{
+	font-size:14pt;
+}
+
+p{
+	font-size:12pt;
+}
