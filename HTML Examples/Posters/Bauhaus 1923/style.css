@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&display=swap');
+
+@page{
+    size: 30cm 40cm;
+    background-color:rgb(243,244,239);
+    margin:4cm 2cm 2cm 2cm;
+
+
+    @top-left{
+        content:"Bauhaus";	
+        font-family: 'Catamaran', sans-serif;
+        font-size:48pt;
+        font-weight:bold;
+    }
+
+    @top-right{
+        content:"1923";
+        font-size:24pt;
+        font-family: 'Catamaran', sans-serif;
+        font-weight:bold;
+    }
+}
+
+body{
+    border-top:8px solid black;
+}
+
+.wrapper{
+    margin-top:2cm;
+    position:relative;
+}
+
+.foot_wrapper{
+    position:relative;
+    top:28cm;
+    display:flex;
+    justify-content: space-between; 
+}
+
+.c1{
+    background-color:rgb(239,152,1);
+    border-radius:100%;
+}
+
+.foot_wrapper .c1,
+.foot_wrapper .c2,
+.foot_wrapper .c3,
+.foot_wrapper .c4{
+    width:4cm;
+    height:4cm;
+}
+
+.wrapper .c1{
+    position:absolute;
+    width:26cm;
+    height:26cm;
+}
+
+.c2{
+    background-color:rgb(235,89,36);
+    border-radius:100%;
+}
+
+.wrapper .c2{
+    position:absolute;
+    top:2cm;
+    left:2cm;
+    width:22cm;
+    height:22cm;
+}
+
+.c3{
+    background-color:rgb(230,29,42);
+    border-radius:100%;
+}
+
+.wrapper .c3{
+    position:absolute;
+    top:4cm;
+    left:4cm;
+    width:18cm;
+    height:18cm;
+}
+
+.c4{
+    background-color:black;
+    border-radius:100%;
+}
