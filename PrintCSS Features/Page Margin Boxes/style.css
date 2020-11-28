@@ -1,0 +1,113 @@
+@page  {
+    margin: 20mm;
+
+    @top-left-corner{
+        content:"1";
+        background-color:#1a202c;
+        color:#fff;
+        text-align:center;
+      }
+  
+    @top-left{
+        content:"2";
+        background-color:#742a2a;
+        color:#fff;
+        text-align:center;
+    }
+
+    @top-center{
+        content:"3";
+        background-color:#7b341e;
+        color:#fff;
+        text-align:center;
+    }
+
+    @top-right{
+        content:"4";
+        background-color:#744210;
+        color:#fff;
+        text-align:center;
+    }
+
+    @top-right-corner{
+        content:"5";
+        background-color:#22543d;
+        color:#fff;
+        text-align:center;
+    }
+  
+    @right-top{
+        content:"6";
+        background-color:#234e52;
+        color:#fff;
+    }
+  
+    @right-middle{
+        content:"7";
+        background-color:#2a4365;
+        color:#fff;
+    }
+  
+    @right-bottom{
+        content:"8";
+        background-color:#3c366b;
+        color:#fff;
+    }
+  
+    @bottom-right-corner {
+        content:"9";
+        background-color:#44337a;
+        color:#fff;
+        text-align:center;
+    }
+  
+    @bottom-right {
+        content:"10";
+        background-color:#702459;
+        color:#fff;
+        text-align:center;
+    }
+
+    @bottom-center{
+        content:"11";
+        background-color:#1a202c;
+        color:#fff;
+        text-align:center;
+    }
+
+    @bottom-left{
+        content:"12";
+        background-color:#742a2a;
+        color:#fff;
+        text-align:center;
+    }
+
+    @bottom-left-corner{
+        content:"13";
+        background-color:#7b341e;
+        color:#fff;
+        text-align:center;
+    }
+  
+    @left-bottom{
+        content:"14";
+        background-color:#744210;
+        color:#fff;
+    }
+  
+    @left-middle{
+        content:"15";
+        background-color:#22543d;
+        color:#fff;
+    }
+  
+    @left-top{
+        content:"16";
+        background-color:#234e52;
+        color:#fff;
+    }
+}
+
+h1{
+    padding:0 0 0 10mm;
+}
