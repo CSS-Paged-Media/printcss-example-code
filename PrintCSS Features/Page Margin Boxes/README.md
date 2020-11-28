@@ -4,4 +4,4 @@
 
 ## Video
 
-No video yet. [#1]
+No video yet. [Issue #1](https://github.com/azettl/printcss.examples/issues/1)
