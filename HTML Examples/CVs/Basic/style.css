@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&family=Open+Sans&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@page{
+  size:A4;
+  margin:5cm 2cm 2cm 2cm;
+  
+  @top-center{
+  	content:element(MyHeader);
+  }
+  
+  @bottom-center{
+  	content: "- " counter(page) " -";
+  }
+}
+
+header{
+	position:running(MyHeader);
+    text-align:center;
+}
+
+header p i:first-of-type{
+	margin-left:0;
+}
+
+header i{
+	margin-left:5mm;
+}
+
+section:first-of-type{
+	position:absolute;
+  	bottom:0;
+}
+
+section:nth-of-type(2){
+    break-before:always;
+}
+
+section{
+	break-inside:avoid;
+}
+
+h1, h2, h3{
+	font-family: 'Asul', sans-serif;
+}
+
+h2{
+	background-color:black;
+  	color:white;
+  	display:inline-block;
+  	padding:1mm;
+  	text-transform:uppercase;
+}
+
+body{
+  	font-family: 'Open Sans', sans-serif;
+}
+
+.flex{
+	display:flex;
+}
+
+.left{
+	min-width:4cm;
+}
+
+.right p:first-of-type,
+.right h3:first-of-type{
+	margin-top:0;
+}
+
+.right p:first-of-type{
+	margin-bottom:0;
+}
