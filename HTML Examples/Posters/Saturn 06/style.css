@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@page{
+    size:30cm 40cm;
+    background-color:rgb(233,227,213);	
+    margin:1cm 1cm 4cm 1cm;
+
+
+    @bottom-left{
+        content:"06";
+        font-size:64pt;
+        font-weight:bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @bottom-right{
+        content:"Saturn";
+        text-transform:uppercase;
+        font-size:64pt;
+        font-weight:bold;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.flex-item {
+    background:black;
+    width:.5cm;
+    height:34cm;
+}
+
+.circle{
+    position:absolute;
+    left:4cm;
+    top:6cm;
+    width:20cm;
+    height:20cm;
+    border-radius:100%;
+    background-color:rgb(249,177,73);
+}
