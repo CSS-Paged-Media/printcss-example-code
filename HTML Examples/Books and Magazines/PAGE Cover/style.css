@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@700;900&display=swap');
+
+@page{
+    size:A4;
+    margin:0cm;
+    background-image: radial-gradient(circle farthest-corner at center, rgba(239, 157, 182, 1) 15%, rgba(243, 169, 128, 1) 30%, rgba(176, 166, 204, 1) 50%, rgba(154, 207, 173, 1) 80%, rgba(254, 242, 147, 1) 100%);
+    background-repeat:no-repeat;
+}
+
+.info{
+    margin:1cm;
+    display:flex;
+    justify-content: space-between; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.info .right{
+    font-size:10pt;
+    padding-top:4pt;
+    text-transform:uppercase;
+}
+
+.info .left{
+    font-weight:900;
+    font-size:16pt;
+}
+
+.info .left span{
+    margin-right:.5cm;
+}
+
+.head{
+    margin:1cm;
+    margin-top:.5cm;
+    display:flex;
+    justify-content: space-between; 
+    font-weight:700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{
+    text-transform:uppercase;
+    font-weight:900;
+    font-size:120pt;
+    font-stretch:ultra-expanded;
+    margin-left:-24pt;
+}
+
+.rotate{
+    text-transform:uppercase;
+    transform:rotate(-90deg);
+    font-size:35pt;
+    font-weight:700;
+    margin-left:36pt;
+    margin-bottom:-10pt;
+}
+
+.head .content{
+    font-size:20pt;
+    font-weight:700;
+    padding-top:24pt;
+    margin-left:148pt;
+}
+
+u{
+    text-transform:uppercase;
+}
+
+.main{
+    margin:1cm;
+    font-weight:700;
+    font-size:52pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main .content{
+    margin-top:.5cm;
+}
+
+
+.main .content div{
+    margin-top:.25cm;
+    line-height:48pt;
+}
+
+.barcode{
+    transform:rotate(90deg);
+    position:absolute;
+    right:-1.65cm;
+    top:25cm;
+}
+
+.barcode img{
+    height:70px;
+}
