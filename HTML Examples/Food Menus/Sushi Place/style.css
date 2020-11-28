@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&family=Space+Mono&display=swap');
+
+@page{
+    size:A6;
+    margin:.5cm;
+    background-color: #ffffff;
+    background-image:  linear-gradient(30deg, #dfdfdf 12%, transparent 12.5%, transparent 87%, #dfdfdf 87.5%, #dfdfdf), linear-gradient(150deg, #dfdfdf 12%, transparent 12.5%, transparent 87%, #dfdfdf 87.5%, #dfdfdf), linear-gradient(30deg, #dfdfdf 12%, transparent 12.5%, transparent 87%, #dfdfdf 87.5%, #dfdfdf), linear-gradient(150deg, #dfdfdf 12%, transparent 12.5%, transparent 87%, #dfdfdf 87.5%, #dfdfdf), linear-gradient(60deg, #dfdfdf77 25%, transparent 25.5%, transparent 75%, #dfdfdf77 75%, #dfdfdf77), linear-gradient(60deg, #dfdfdf77 25%, transparent 25.5%, transparent 75%, #dfdfdf77 75%, #dfdfdf77);
+    background-size: 42px 74px;
+    background-position: 0 0, 0 0, 21px 37px, 21px 37px, 0 0, 21px 37px;
+}
+
+h1, h3{
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+h2{
+    font-family: 'Dancing Script', sans-serif;
+}
+
+h3{
+    background-color:#000;
+    color:#fff;
+    padding:4px;
+    display:inline-block;
+}
+
+h1, h2{
+    margin:0;
+    text-align:center;
+}
+
+h1{
+    color:blue;
+    text-shadow: rgba(255, 255, 255, 1) 1px 1px 0px, rgba(0, 0, 255, 1) 2px 2px 0px;color: rgba(0, 0, 255, 1);
+}
+
+.img{
+    display:block;
+    font-size:128pt;
+    margin-top:1cm;
+    text-align:center;
+}
+
+.flex{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    display:flex;
+    font-family: 'Dancing Script', cursive;
+    justify-content:space-between;
+}
+
+.info{
+    border:2px solid blue;
+    border-radius:5px;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left{
+    max-width:80px;
+    display:inline-block;
+    position:absolute;
+    left:0;
+    top:2cm;
+    transform:rotate(15deg);
+}
+
+.right{
+    max-width:120px;
+    display:inline-block;
+    position:absolute;
+    right:0;
+    top:7cm;
+    transform:rotate(-15deg);
+}
+
+.flex div{
+    width:45%;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+li{
+    margin:0;
+    padding:0;
+}
+
+ul li span{
+    float:right;
+}
+
+ul li::before{
+    content:'';
+    display:block;
+    clear:both;
+}
