@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+@page{
+    size:8.27in 11.69in; 
+    margin:0.39in;
+
+    @top-left-corner{
+        content:"";
+        background-color:#663399;
+    }
+
+    @left-top{
+        content:"";
+        background-color:#663399;
+    }
+
+    @left-middle{
+        content:"";
+        background-color:#663399;
+    }
+
+    @left-bottom{
+        content:"";
+        background-color:#663399;
+    }
+
+    @bottom-left-corner{
+        content:"";
+        background-color:#663399;
+    }
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    margin-left:0.78in;
+}
+
+.purple{
+    color:#663399;
+    font-size:32pt;
+}
+
+.title{
+    font-size:74pt;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.title .purple{
+    position:relative;
+    top:-16pt;
+    left:16pt;
+    letter-spacing:4pt;
+}
+
+.author{
+    margin-top:1.39in;
+    font-size:26pt;
+    font-weight:bold;
+}
+
+img{
+    position:absolute;
+    bottom:0;
+    right:0.78in;
+    max-width:2.5in;
+}
