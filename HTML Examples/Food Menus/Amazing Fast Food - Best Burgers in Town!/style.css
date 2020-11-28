@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Space+Mono&display=swap');
+@page{
+    size:3.9in 8.3in;
+    margin:.15in;
+    padding:.15in;
+    border:1px dashed #fff;
+    background-color: #404040;
+    color:#fff;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #404040 20%, #404040 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #404040 20%, #404040 80%, transparent 80%, transparent) 52.5px 52.5px, linear-gradient(#444444 4.2px, transparent 4.2px) 0 -2.1px, linear-gradient(90deg, #444444 4.2px, #404040 4.2px) -2.1px 0;
+    background-size: 105px 105px, 105px 105px, 52.5px 52.5px, 52.5px 52.5px;
+}
+
+body{
+    color:#fff;
+}
+
+.menucover{
+    text-align:center;
+}
+
+.menucover h1{
+    text-transform:uppercase;
+    margin-bottom:0;
+    margin-top:.5in;
+    font-weight:normal;
+    color:darkorange;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menucover h2{
+    text-transform:lowercase;
+    margin-top:0;
+    font-weight:normal;
+    color:orange;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menucover p{
+    margin-top:1in;
+    font-family: 'Space Mono', monospace;
+}
+
+.menucover .coverimg{
+    font-size:36pt;
+    position:absolute;
+    bottom:.5in;
+    left:.15in;
+    text-align:center;
+    width:3.3in;
+}
+
+.menucover img{
+    max-width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.menuitems{
+    break-before:always;
+    page-break-before:always;
+    padding:.25in;
+    font-family: 'Dancing Script', cursive;
+}
+
+.menuitems span.img{
+    font-size:48pt;
+    float:left;
+    width:35%;
+}
+
+.menuitems ul{
+    float:right;
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    width:60%;
+}
+
+.menuitems li{
+    margin:0;
+    padding:0;
+}
+
+.menuitems ul li span{
+    float:right;
+}
+
+.menuitems ul li::before{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.menuitems div{
+    clear:both;
+}
