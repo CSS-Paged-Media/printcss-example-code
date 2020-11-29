@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+@page{
+	size:210mm 297mm;
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-center{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#000222;
+  }
+}
+
+@page:first{
+
+  margin:6cm 6cm 1cm 2cm;
+
+  @top-left{
+  	content:element(coverLogo);
+  }
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+}
+
+@page LastPage{
+
+  margin:0 0 1cm 0;
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+}
+
+@page:left{
+
+  margin:0 0 1cm 0;
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+}
+
+@page RightBlue{
+  margin:3cm 3cm 1cm 3cm;
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-bottom{
+    content:"";
+  	background:#000222;
+  }
+}
+
+@page CenterImage{
+  margin:1.5cm 1.5cm 1cm 1.5cm;
+}
+
+.logo-area{
+	position:running(coverLogo);
+}
+
+.circle{
+	width:2cm;
+  	height:2cm;
+  	border:.4cm solid #44b75b;
+  	border-radius:100%;
+    display:inline-block;
+}
+
+.logo-area h1,
+.last-logo-area h1{
+	display:inline-block;
+  	text-transform:uppercase;
+  	color:#000222;
+  	width:5cm;
+  	line-height:1;
+  	margin-left:0.25cm;
+  	position:relative;
+    top:-.25cm; 
+}
+
+.green-area{
+	background:#44b75b;
+  	margin-left:-2cm;
+  	width:210mm;
+  	padding:2cm;
+}
+
+.green-area h1{
+  	text-transform:uppercase;
+  	color:#000222;
+  margin:0;
+}
+
+.green-area h2{
+  	text-transform:uppercase;
+  	color:#fff;
+  margin:0;
+}
+
+.green-area p{
+  	color:#000222;
+  	width:11cm;
+  margin-bottom:0;
+}
+
+.cover{
+	page-break-after:always;
+  	break-after:always;
+}
+
+.cover img{
+  	margin-left:-2cm;
+  	width:15cm;
+  	height:12.55cm;
+}
+
+.last{
+	page: LastPage;
+  	page-break-before:always;
+  	break-before:always;
+    display:flex;
+  flex-wrap: wrap
+}
+
+.last img,
+.last > div{
+  	width:105mm;
+  	height:14.35cm;
+  	margin:0;
+  	display:flex;
+  	justify-content:center;
+    align-items: center;
+}
+
+.last p{
+  	margin:2cm;
+  	color:#000222;
+}
+
+.last .blue-area{
+  	background:#000222;
+}
+
+.page-right-blue{
+	page: RightBlue;
+}
+
+.page-right-blue img{
+	width:15.5cm;
+  	position:absolute;
+  	bottom:0;
+  	right:-3cm;
+  	padding-left:.5cm;
+  	background-color:#fff;
+}
+
+.page-right-blue .content{
+	padding:0 1cm 2cm 1cm;
+  	background-color:#fff;
+  	position:absolute;
+  	top:0;
+  	left:0;
+}
+
+.page-right-blue .content h1{
+	color:#000222;
+  	margin-top:0;
+  	text-transform: capitalize;
+}
+
+.page-right-blue .content h1 .green{
+	color:#44b75b;
+  	display:block;
+}
+
+.page-right-blue .green-border{
+	border:.125cm solid #44b75b;
+  	height:16cm;
+  	width:8cm;
+  	position:absolute;
+  	top:1cm;
+  	left:-1.5cm;
+}
+
+.page-center-image{
+	page: CenterImage;
+}
+
+.page-center-image img{
+	width:100%;
+}
+
+.page-center-image  h1{
+	color:#000222;
+  	text-transform: capitalize;
+  	text-align:center;
+}
+
+.page-center-image  h1 .green{
+	color:#44b75b;
+  	display:block;
+}
+
+.page-center-image .content{
+	width:9.25cm;
+  	padding-right:.5cm;
+  	background-color:#fff;
+  	position:absolute;
+  	left:0;
+  	top:15.5cm;
+  	z-index:3;
+}
+
+.page-center-image .content p:first-of-type{
+	margin:0;
+}
+
+.page-center-image blockquote{
+	width:8.75cm;
+  	margin:0;
+	border:.125cm solid #44b75b;
+  	padding:.5cm;
+  	background-color:#fff;
+  	position:absolute;
+  	right:0;
+  	top:15.5cm;
+  	z-index:2;
+}
+
+.page-center-image .green-border{
+	width:8.75cm;
+	height:8.75cm;
+	border:.125cm solid #44b75b;
+  	position:absolute;
+  	left:4.625cm;
+  	bottom:1cm;
+  	z-index:1;
+}
