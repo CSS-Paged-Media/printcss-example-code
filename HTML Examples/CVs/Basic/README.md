@@ -1,6 +1,6 @@
 ## Blog Post
 
-No Blog Post yet. [Issue #11](https://github.com/azettl/printcss.examples/issues/11)
+[PrintCSS: A basic CV example](https://medium.com/printcss/printcss-a-basic-cv-example-abb3b39c4aba)
 
 ## Video
 
