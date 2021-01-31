@@ -6,31 +6,30 @@
 }
 
 @page front{
-  margin:15mm;
-  color:rgb(188, 11, 6);
+	margin:15mm;
+	color:rgb(188, 11, 6);
   
-  @top-left-corner{
-    line-height:1;
-    text-align:center;
-    font-size:26pt;
-    overflow-wrap: break-word;
-  	text-transform: uppercase;
-    content:"Joker";
-    letter-spacing:1em;
-    margin:2mm;
-  }
-  
-  @bottom-right-corner{
-    line-height:1;
-    text-align:center;
-    font-size:26pt;
-    overflow-wrap: break-word;
-  	text-transform: uppercase;
-    content:"Joker";
-    letter-spacing:1em;
-    transform:rotate(180deg);
-    margin:2mm;
-  }
+	@left-middle{
+		line-height:1;
+		text-align:center;
+		font-size:26pt;
+		overflow-wrap: break-word;
+		text-transform: uppercase;
+		content:"Joker";
+		letter-spacing:1em;
+	}
+
+	@right-middle{
+		line-height:1;
+		text-align:center;
+		font-size:26pt;
+		overflow-wrap: break-word;
+		text-transform: uppercase;
+		content:"Joker";
+		letter-spacing:1em;
+		transform:rotate(180deg);
+		margin:2mm;
+	}
 }
 
 body{
