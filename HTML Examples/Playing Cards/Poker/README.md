@@ -1,6 +1,6 @@
 ## Blog Post
 
-No Blog Post yet.
+[PrintCSS: How to create a Poker Card](https://medium.com/printcss/printcss-how-to-create-a-poker-card-a6c7b3ae34dc)
 
 ## Video
 
