@@ -1,6 +1,6 @@
 ## Blog Post
 
-No Blog Post yet. [Issue #15](https://github.com/azettl/printcss.examples/issues/15)
+[PrintCSS: Create your Certificate PDFs with HTML and CSS](https://medium.com/printcss/printcss-create-your-certificate-pdfs-with-html-and-css-926e7dcf6281)
 
 ## Video
 
