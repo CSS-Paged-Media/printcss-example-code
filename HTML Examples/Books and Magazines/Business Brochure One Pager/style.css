@@ -1,0 +1,157 @@
+/* inspired by http://www.designfreebies.org/design-templates/free-indesign-template-corporate-flyer-brochure/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@page{
+  size:A4;
+  margin:0;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content{
+  margin:20mm 10mm;
+  width:90mm;
+  height:177.5mm;
+}
+
+.image-top{
+  position:absolute;
+  top:0;
+  right:0;
+  width:99mm;
+  height:150mm;
+  overflow:hidden;
+}
+
+.image-top .white{
+  width:210mm;
+  height:210mm;
+  position:absolute;
+  top:45mm;
+  right:-140mm;
+  transform:rotate(45deg);
+  background-color:white;
+}
+
+.image-top img{
+  position:relative;
+  top:-80mm;
+}
+
+.image-bottom{
+  position:absolute;
+  bottom:-160mm;
+  left:-50mm;
+  width:210mm;
+  height:210mm;
+  transform:rotate(45deg);
+  overflow:hidden;
+}
+
+.image-bottom img{
+  transform:rotate(-45deg);
+  position:relative;
+  top:-240mm;
+}
+
+.box{
+  width:70mm;
+  height:70mm;
+  transform:rotate(45deg);
+  position:absolute;
+}
+
+.box > div{
+  position:relative;
+  top:10mm;
+  left:10mm;
+  width:50mm;
+  transform:rotate(-45deg);
+}
+
+.box h1{
+  text-transform:uppercase;
+  color:#000222;
+  margin:0;
+}
+
+.box h2{
+  text-transform:uppercase;
+  color:#fff;
+  margin:0;
+}
+
+.box p{
+  color:#000222;
+  margin-bottom:0;
+}
+
+.empty-box-one{
+  background:#44b75b;
+  bottom:163mm;
+  right:-35mm;
+}
+
+.empty-box-two{
+  background:#44b75b;
+  bottom:-35mm;
+  right:-35mm;
+}
+
+.content-box-one{
+  background:#000222;
+  bottom:113.5mm;
+  right:14.5mm;
+}
+
+.content-box-two{
+  background:#44b75b;
+  bottom:64mm;
+  right:64mm;
+}
+
+.content-box-three{
+  background:#000222;
+  bottom:14.5mm;
+  right:14.5mm;
+}
+
+.content-box-one h1, .content-box-three h1,
+.content-box-one p, .content-box-three p{
+  color:#fff;
+}
+
+.circle{
+  width:1cm;
+  height:1cm;
+  border:.6cm solid #44b75b;
+  border-radius:100%;
+  display:inline-block;
+}
+
+.logo-area h1{
+  display:inline-block;
+  text-transform:uppercase;
+  color:#000222;
+  width:5cm;
+  line-height:1;
+  margin-left:0.25cm;
+  position:relative;
+  top:-.3cm; 
+}
+
+.main-content > h1{
+  color:#000222;
+  margin-top:0;
+  text-transform: capitalize;
+}
+
+.main-content > h1 .green{
+  color:#44b75b;
+  display:block;
+}
