@@ -1,6 +1,6 @@
 ## Blog Post
 
-No Blog Post yet. [Issue #6](https://github.com/azettl/printcss.examples/issues/6)
+[PrintCSS: Create Planet Posters](https://medium.com/printcss/printcss-create-planet-posters-f68e4c904fac)
 
 ## Video
 
