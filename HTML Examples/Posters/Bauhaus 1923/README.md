@@ -1,6 +1,6 @@
 ## Blog Post
 
-No Blog Post yet. [Issue #6](https://github.com/azettl/printcss.examples/issues/6)
+[PrintCSS: Create a Bauhaus Poster with the help of HTML and CSS](https://medium.com/printcss/printcss-create-a-bauhaus-poster-with-the-help-of-html-and-css-d4f97a912b71)
 
 ## Video
 
