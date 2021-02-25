@@ -4,4 +4,4 @@
 
 ## Video
 
-No video yet. [Issue #1](https://github.com/azettl/printcss.examples/issues/1)
+[PrintCSS: Page Margin Boxes](https://www.youtube.com/watch?v=zdNYDI8P0ks)
