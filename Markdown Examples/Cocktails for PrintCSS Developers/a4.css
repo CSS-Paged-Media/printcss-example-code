@@ -171,7 +171,7 @@ h4 em{
 
 .recipeImage{
 	page: RecipeImage;
-	break-before: left;
+	break-before: right;
 }
 
 .recipes{

@@ -21,5 +21,12 @@
 
 #### By **Andreas Zettl** *Recreated the Layout from [Cocktails for Cougars & Cowgirls](https://www.thisgirlwalksintoabar.com/blog/2015/09/its-here-introducing-our-new-cocktail-book-cocktails-for-cougars-cowgirls)*
 
-![rel=content](recipes/mojito.md)
-![rel=content](recipes/martini.md)
+
+
+![rel=content](recipes/ahformatter.md)
+![rel=content](recipes/pagedjs.md)
+![rel=content](recipes/pdfreactor.md)
+![rel=content](recipes/prince.md)
+![rel=content](recipes/typesetsh.md)
+![rel=content](recipes/vivliostyle.md)
+![rel=content](recipes/weasyprint.md)
