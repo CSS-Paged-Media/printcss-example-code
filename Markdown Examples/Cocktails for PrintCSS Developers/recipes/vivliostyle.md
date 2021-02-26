@@ -12,7 +12,7 @@
 
 # Long Island Vivliostyle
 
-There are a few impostors out there that claim to be Long Island Vivliostyles. In actuality, there is only one correct way to make a LIIT... and this is it!
+There are a few imposters out there that claim to be Long Island Vivliostyles. In actuality, there is only one correct way to make a LIIT... and this is it!
 
 :::{.details}
 
