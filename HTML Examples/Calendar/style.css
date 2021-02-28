@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+@page{
+  margin:0;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Gravitas One', cursive;
+}
+
+div{
+  page-break-after:always;
+  break-after:always;
+}
+
+h1{
+  position:absolute;
+  left:50%;
+  top:2cm;
+  z-index:3;
+  transform:translateX(-50%);
+  font-weight:bold;
+  font-size:4em;
+  color:white;
+  background:rgba(0,0,0,.5);
+  border-radius:5mm;
+  padding:5mm;
+}
+
+img{
+  max-width:100%;
+  position:absolute;
+  top:0;
+  z-index:1;
+}
+
+table{
+  width:100%;
+  position:absolute;
+  bottom:0;
+  z-index:2;
+  background-color:white;
+}
+
+th{
+  height:1.5cm;
+  line-height:1.5cm;
+  background:deepskyblue;
+}
+
+td{
+  height:2cm;
+  line-height:2cm;
+  background:lightgreen;
+}
+
+th, td{
+  text-align:center;
+  font-weight:bold;
+  font-size:2em;
+  color:white;
+}
+
+td:empty{
+  background:lightgrey;
+}
