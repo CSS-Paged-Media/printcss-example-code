@@ -142,6 +142,17 @@ ul.toc a + a::after {
   white-space: pre-wrap; 
 }
 
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+a:not([href^="#"])::after {
+  float:footnote;
+  content: " ("attr(href)")";
+  font-style: italic;
+}
+
 /* headings */
 
 
