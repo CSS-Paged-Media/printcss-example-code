@@ -65,12 +65,18 @@ body{
 	margin:0;
 	padding:0;
 	font-size:12pt;
+  direction: ltr;
 }
 
 .chapter,
 .section{
   page-break-before: always;
   break-before: always;
+}
+
+.chapter + .section{
+  page-break-before: avoid;
+  break-before: avoid;
 }
 
 .chapter{
@@ -173,65 +179,36 @@ caption{
   text-align: center;
 }
 
-/* headings */
-
-
-h1#toc { text-align: left;}
-
-
-h1, h2, h3, h4, h5, h6, h7 {
-   font-family: sans-serif;
-}
-
-/* Parts */
-body.kramdown h1, body.markua h1.part {
-   font-size: 4em;
-   line-height: .8em;
-   font-variant: small-caps;
-   margin-top: 20%;
-   text-align: center;
-   padding: 0;
-   font-weight: normal;
-}
-
 /* Chapters */
-h1#toc, body.kramdown h2, body.markua h1.chapter {
+h1.chapter {
    font-size: 1.5em;
    margin-top: 10%;
    margin-bottom: 1em;
 }
 
 /* Sections */
-body.kramdown h3, body.markua h2.section {
+h2.section {
    font-size: 1.17em;
    margin-top: 1em;
    margin-bottom: 0.25em;
 }
 
-body.kramdown h4, body.markua h3.subsection { margin-top: 1em;
+h3.subsection { 
+   margin-top: 1em;
    font-size: 1.12em;
    margin-bottom: 0.25em;
 }
 
-body.kramdown h5, body.markua h4.subsubsection { margin-top: 1em;
-   font-size: 0.83em;
+h4.subsubsection {
+   margin-top: 1em;
+   font-size: 1em;
    margin-bottom: 0.25em;
-}
-
-body.kramdown h6, body.markua h5.subsubsubsection {
-   font-size: 0.75em;
-   margin: 0;
 }
 /* general text */
 
 p {
   text-indent: 0em;
   margin-top: 0.5em;
-}
-
-.hanging-indent p {
-  padding-left: 2em;
-  text-indent: -2em;
 }
 
 blockquote { margin-left: 2em; }
@@ -241,70 +218,12 @@ span.lineno, code.lineno {
   font-size: 80%;
 }
 
-.centered p {
-  text-align: center;
-}
-
-/* asides, warnings, etc */
-
-div.sidebarish h1, div.sidebarish h2, div.sidebarish h3, div.sidebarish h4 {
-  margin-bottom: 0.5em;
-  vertical-align: center;
-}
-
-div.sidebarish   {
-  margin: 50px 0px 50px 10px;
-  padding-left: 60px;
-}
-
-div.sidebarish img.sidebar-image {
-  float: left;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  vertical-align: center;
-}
-
-/* Endnotes page */
-
-div.footnotes h1, div.footnotes h2 {
-  text-align: left;
-}
-
-div.footnotes h1 {
-  font-size: 1.5em;
-}
-
-div.footnotes h2 {
-  font-size: 1.17em;
-}
-
 /* force some space before and after code blocks */
 pre {
    margin-top: 0.5em;
    margin-bottom: 0.5em;
    font-family: monospace;
 }
-
-body {
-  direction: ltr;
-}
-
-/* image equations */
-
-img.inline-equation {
-   height: 1.25em;
-}
-
-img.block-equation {
-  margin-top: 0.5em;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  text-align: center;
-  display: block;
-}
-
 
 /* styles for inserted (uil) and deleted (udl) lines */
 .udl {
