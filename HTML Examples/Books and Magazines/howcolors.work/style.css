@@ -157,6 +157,11 @@ a:not([href^="#"])::after {
   font-style: italic;
 }
 
+.note{
+  float:footnote;
+  font-style: italic;
+}
+
 figure{
   width:100%;
   margin:0 auto;
