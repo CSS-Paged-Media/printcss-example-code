@@ -138,8 +138,8 @@ ul.toc a + a::after {
   margin:0;
 }
 
-code{
-  word-wrap: break-word;
+.code pre{
+  white-space: pre-wrap; 
 }
 
 /* headings */
