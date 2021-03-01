@@ -67,10 +67,19 @@ body{
 	font-size:12pt;
 }
 
-.chapter{
+.chapter,
+.section{
   page-break-before: always;
   break-before: always;
+}
+
+.chapter{
   string-set: heading content();
+}
+
+.quiz{
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 img.fullscreen{
@@ -133,11 +142,6 @@ ul.toc a + a::after {
   content: target-counter(attr(href), page); 
 }
 
-.code{
-  width:100%;
-  margin:0;
-}
-
 .code pre{
   white-space: pre-wrap; 
 }
@@ -151,6 +155,17 @@ a:not([href^="#"])::after {
   float:footnote;
   content: " ("attr(href)")";
   font-style: italic;
+}
+
+figure{
+  width:100%;
+  margin:0 auto;
+}
+
+figcaption,
+caption{
+  font-size:10pt;
+  text-align: center;
 }
 
 /* headings */
@@ -243,10 +258,6 @@ div.sidebarish img.sidebar-image {
   height: 40px;
   margin-right: 10px;
   vertical-align: center;
-}
-
-div.page-break {
-  page-break-after: always;
 }
 
 /* Endnotes page */
