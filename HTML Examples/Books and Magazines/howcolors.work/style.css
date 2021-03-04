@@ -71,24 +71,24 @@ body{
   font-family: 'Libre Caslon Text', serif;
 }
 
-.chapter,
-.section{
+h1,
+h2{
   page-break-before: always;
   break-before: always;
 }
 
-.chapter + .section{
+h1 + h2{
   page-break-before: avoid;
   break-before: avoid;
 }
 
-.chapter{
+h1{
   string-set: heading content();
 }
 
 .quiz,
 .keep-together,
-figure{
+figure.image{
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -184,27 +184,25 @@ caption{
   text-align: center;
 }
 
-/* Chapters */
-h1.chapter {
+h1 {
    font-size: 1.5em;
    margin-top: 10%;
    margin-bottom: 1em;
 }
 
-/* Sections */
-h2.section {
+h2 {
    font-size: 1.17em;
    margin-top: 1em;
    margin-bottom: 0.25em;
 }
 
-h3.subsection { 
+h3 { 
    margin-top: 1em;
    font-size: 1.12em;
    margin-bottom: 0.25em;
 }
 
-h4.subsubsection {
+h4 {
    margin-top: 1em;
    font-size: 1em;
    margin-bottom: 0.25em;
