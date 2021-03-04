@@ -44,53 +44,39 @@
             </li>
             <li><a href="#leanpub-answers">Answers to Exercises</a><a href="#leanpub-answers"></a></li>
         </ul>
-
         <h1 id="leanpub-auto-intro" class="chapter">Intro</h1>
-
         <p>
             This booklet helps you understand the current and future color notations<span class="note"> (Color notations are different ways to write down colors in your CSS code.)</span> in CSS.
         </p>
-
         <p>The aim is to teach you all different color notations available in CSS. Tell you whether the browsers support these notations already and show you some code examples.</p>
-
         <p>
             The color spaces<span class="note"> (Color spaces are organizations of colors. A color space may define color swatches, like Pantone. Or have a more mathematical notation like sRGB or CMYK.)</span>, which CSS uses in these different ways to express colors are not part of this booklet. In some places I mention them but do not explain any color
             space in detail.
         </p>
-
         <p>To make full use of this booklet, all you need to know is how to create an HTML tag and apply CSS to it. All the different color options you will learn here!</p>
-
         <p>
             Most of the CSS colors are in the sRGB<span class="note"> (sRGB (standard RED GREEN BLUE) is an RGB color space created to for the use on monitors and the web.)</span> color space, except Lab and LCH, where the computed value is a CIELab
             <span class="note"> (The CIELAB color space defined by the International Commission on Illumination (CIE).)</span> color. Not to forget the new <code>color()</code> function. This makes it possible to pass your own or predefined color profiles!
         </p>
-
         <p>
             All these color notations offer an optional parameter for the alpha value. The alpha value indicates how transparent the color is. In the booklet, there is an extra section in each chapter that shows how to use the alpha values.
         </p>
-
         <aside class="information blurb">
             <p>
                 Before you use colors in your HTML documents, please consider the <a href="https://www.w3.org/TR/WCAG20/">W3C Web Content Accessibility Guidelines</a>. Most important is the contrast between your foreground and background
                 color. For the current color notations, you can check the contrast with my <a href="https://convertingcolors.com/color-contrast-checker.html">Color Contrast Checker</a>.
             </p>
         </aside>
-
         <img
             alt=""
             class="fullscreen"
             src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/howcolors_work_book_current_section.png"
             style="width: 100%;"
         />
-
         <h1 id="leanpub-auto-current-ways-to-express-colors" class="chapter">Current Ways to Express Colors!</h1>
-
         <h2 id="leanpub-auto-code-samples" class="section">Code Samples</h2>
-
         <p>All the examples in this booklet use the same HTML structure. To make the examples look nice, I added a simple CSS grid and some basic formatting. The colors I define as CSS variables on the top.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">  1 </code><code class="cp">&lt;!DOCTYPE html&gt;</code>
 <code class="lineno">  2 </code><code class="p">&lt;</code><code class="nt">html</code><code class="p">&gt;</code>
@@ -201,9 +187,7 @@
 </pre>
             </div>
         </figure>
-
         <p>The result of this code will give you four boxes for the text, background, border, and shadow CSS examples.</p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -214,18 +198,12 @@
                 <figcaption>The browser output of the above code</figcaption>
             </figure>
         </div>
-
-        
         <p>
             In the following CSS examples, we will change the <code>--color</code> and <code>--color-alpha</code> variables. Instead of a variable as color <code>color:var(--color);</code> you could of course also pass the color value
             <code>color:#FF0000;</code>.
         </p>
-
-        
         <h2 id="leanpub-auto-hex" class="section">Hex</h2>
-
         <p>The hex color notation allows you to define sRGB colors as hexadecimal numbers. It starts with a hash <code>#</code>, and then you have the three primary colors, red, green and last the blue color.</p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -236,13 +214,11 @@
                 <figcaption>The primary colors, red, green, and blue.</figcaption>
             </figure>
         </div>
-
         <p>
             The hex notation only allows ten numerals (0-9) and six letters (a-f). Where <code>00</code> would be <code>0</code> in the RGB functional notation, and <code>FF</code> would be <code>255</code>.<br />
             The higher the value of a primary color is, the brighter that color is. This means that the hex color <code>#000000</code> has zero brightness in all three primary colors and is black. The color <code>#FFFFFF</code> is the
             opposite as all colors have the full light, which leads to white.
         </p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -253,16 +229,13 @@
                 <figcaption>A example of brighter and darker versions of red <code>#FF0000</code></figcaption>
             </figure>
         </div>
-
         <aside class="tip blurb">
             <p>
                 If you use any RGB color format to express colors, you should consider writing them in this notation. This is true in case the file size is the most important to you and readability comes second. The hex notation gives you
                 the shortest color strings. You can define some colors in the three-digit notation. That three-digit short-form reduces your color string (including <code>#</code>) to four or five characters.
             </p>
         </aside>
-
         <h3 id="leanpub-auto-syntax" class="subsection">Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -270,10 +243,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_hex_long.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -295,7 +266,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -308,9 +278,7 @@
             <dt>4</dt>
             <dd>The blue part of the color, two hexadecimal characters.</dd>
         </dl>
-
         <h4 id="leanpub-auto-alpha" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -318,10 +286,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_hex_long_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -345,7 +311,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 4</dt>
             <dd>These parts are the same as for the color notation without an alpha value. To get details have a look at the section above.</dd>
@@ -354,9 +319,7 @@
                 <p>The opacity part of the color, two hexadecimal characters. Where <code>FF</code> = 100%, <code>CC</code> = 80%, <code>99</code> = 60%, <code>66</code> = 40%, <code>33</code> = 20%, and <code>00</code> = 0%.</p>
             </dd>
         </dl>
-
         <h4 id="leanpub-auto-code-samples-1" class="subsubsection">Code Samples</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -367,9 +330,7 @@
                 <figcaption>Result with the color values #442B82 and #442B8277</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno">2 </code>  <code class="err">--</code><code class="k">color</code><code class="p">:</code><code class="mh">#442B82</code><code class="p">;</code>
@@ -378,16 +339,12 @@
 </pre>
             </div>
         </figure>
-
         <h3 id="leanpub-auto-three-digit-notation" class="subsection">Three-digit notation</h3>
         <p>
             It is possible to use a three-digit or four-digit (including the alpha value) notation. In this short-form the single digits get doubled. So, for example, <code>#0FC</code> would be <code>#00FFCC</code> in the standard form. The
             downside is you only have 4096 colors available in the short-form.
         </p>
-
-        
         <h4 id="leanpub-auto-three-digit-syntax" class="subsubsection">Three-digit Syntax</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -395,10 +352,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_hex_short.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -420,7 +375,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -433,9 +387,7 @@
             <dt>4</dt>
             <dd>The blue part of the color, one hexadecimal character.</dd>
         </dl>
-
         <h4 id="leanpub-auto-alpha-1" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -443,10 +395,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_hex_short_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -470,7 +420,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 4</dt>
             <dd>These parts are the same as for the color notation without an alpha value. To get details have a look at the section above.</dd>
@@ -479,10 +428,7 @@
                 <p>The opacity part of the color, one hexadecimal character. Where <code>F</code> = 100%, <code>C</code> = 80%, <code>9</code> = 60%, <code>6</code> = 40%, <code>3</code> = 20%, and <code>0</code> = 0%.</p>
             </dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-code-samples-2" class="subsubsection">Code Samples</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -493,9 +439,7 @@
                 <figcaption>Result with the color values #840 and #8407</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno">2 </code>  <code class="err">--</code><code class="k">color</code><code class="p">:</code><code class="mh">#840</code><code class="p">;</code>
@@ -504,19 +448,16 @@
 </pre>
             </div>
         </figure>
-
         <h3 id="leanpub-auto-browser-support" class="subsection">Browser Support</h3>
         <p>
             The hex notation, is <a href="https://caniuse.com/#feat=mdn-css_types_color_rgb_hexadecimal_notation">supported in all browsers</a>. The four and eight-digit short-form has
             <a href="https://caniuse.com/#feat=css-rrggbbaa">support in all major browsers</a>.
         </p>
-
         <div id="hexexercise" class="quiz">
             <h3 id="leanpub-auto-exercise" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>How many characters can a hex color have (without <code>#</code>)?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>4</li>
                         <li>5</li>
@@ -528,7 +469,6 @@
                 </li>
                 <li>
                     <p>How many colors are available in the three-digit notation?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>Same as in the long format</li>
                         <li>16.777.216</li>
@@ -537,23 +477,16 @@
                 </li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-rgb" class="section">RGB</h2>
-
         <p>
             The RGB functions build the colors from a combination of red, green, and blue. Each of these color values defines the intensity of the color as an integer value. The values range from <code>0</code> to <code>255</code> or from
             <code>0%</code> to <code>100%</code> percent. If you pass <code>0</code> to all three values you will get black, if you pass <code>255</code> to all you get white.
         </p>
-
         <p>The computed value of the following functions is a color in the sRGB color space.</p>
-
         <aside class="tip blurb">
             <p>The functional RGB notation is longer than the hex, but it is easier to read as we have integer values.</p>
         </aside>
-
         <h3 id="leanpub-auto-the-primary-colors" class="subsection">The Primary Colors</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -564,9 +497,7 @@
                 <figcaption>The primary colors, red, green, and blue.</figcaption>
             </figure>
         </div>
-
         <h4 id="leanpub-auto-red" class="subsubsection">Red</h4>
-
         <table style="width: 100%;">
             <thead>
                 <tr>
@@ -583,11 +514,8 @@
                 </tr>
             </tbody>
         </table>
-
         <p>If you only set the red value to the highest possible value <code>255</code>, it gives you the brightest red, which is possible.</p>
-
         <h4 id="leanpub-auto-green" class="subsubsection">Green</h4>
-
         <table style="width: 100%;">
             <thead>
                 <tr>
@@ -604,11 +532,8 @@
                 </tr>
             </tbody>
         </table>
-
         <p>Here only the green value is set to <code>100%</code>, which gives you the brightest green possible.</p>
-
         <h4 id="leanpub-auto-blue" class="subsubsection">Blue</h4>
-
         <table style="width: 100%;">
             <thead>
                 <tr>
@@ -625,12 +550,8 @@
                 </tr>
             </tbody>
         </table>
-
         <p>The same logic applies for blue, so by setting the value to <code>255</code> and the other two values to <code>0</code>, you get the brightest blue.</p>
-
-        
         <h3 id="leanpub-auto-old-syntax" class="subsection">Old Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -638,10 +559,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_old_rgb.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -675,7 +594,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -702,10 +620,7 @@
             <dt>10</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-2" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -713,10 +628,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_old_rgb_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -756,7 +669,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -778,13 +690,9 @@
             <dt>13</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h4 id="leanpub-auto-browser-support-1" class="subsubsection">Browser Support</h4>
         <p>All major <a href="https://caniuse.com/#feat=mdn-css_types_color_rgb_functional_notation">browsers support</a> the RGB functional notation.</p>
-
-        
         <h4 id="leanpub-auto-code-samples-3" class="subsubsection">Code Samples</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -795,9 +703,7 @@
                 <figcaption>Result with the color values rgb(15, 64, 174) and rgba(15, 64, 174, 80%)</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno">2 </code>  <code class="err">--</code><code class="k">color</code><code class="p">:</code><code class="nb">rgb</code><code class="p">(</code><code class="mi">15</code><code class="p">,</code> <code class="mi">64</code><code class="p">,</code> <code class="mi">174</code><code class="p">);</code>
@@ -806,10 +712,7 @@
 </pre>
             </div>
         </figure>
-
-        
         <h3 id="leanpub-auto-new-syntax" class="subsection">New Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -817,10 +720,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_new_rgb.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -850,7 +751,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -875,10 +775,7 @@
             <dt>8</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-3" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -886,10 +783,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_new_rgb_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -927,7 +822,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -953,16 +847,12 @@
             <dt>12</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h4 id="leanpub-auto-browser-support-2" class="subsubsection">Browser Support</h4>
         <p>
             The browser support for the space-separated functional color notations is excellent. All major browsers support it already. For details check
             <a href="https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation">caniuse.com</a>.
         </p>
-
-        
         <h4 id="leanpub-auto-code-samples-4" class="subsubsection">Code Samples</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -973,9 +863,7 @@
                 <figcaption>Result with the color values rgb(47 27 41) and rgb(47 27 41 / 0.6)</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno">2 </code>  <code class="err">--</code><code class="k">color</code><code class="p">:</code><code class="nb">rgb</code><code class="p">(</code><code class="mi">47</code> <code class="mi">27</code> <code class="mi">41</code><code class="p">);</code>
@@ -984,13 +872,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="rgbexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-1" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>rgb(55 10 0)</li>
                         <li>rgba(200, 73, 12, .75)</li>
@@ -1003,7 +889,6 @@
                 </li>
                 <li>
                     <p>You can pass a percentage from 0 - 100%, but what is the range for integer values?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>0 - 255</li>
                         <li>0 - 100</li>
@@ -1012,14 +897,9 @@
                 </li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-hsl" class="section">HSL</h2>
-
         <p>The hexadecimal and functional RGB notations are quite tricky to read and alter. The HSL functional notation is easier to read and work with. It makes it easy to, for example, get a darker version of the same hue.</p>
-
         <p>The hue is an angle on the color wheel, where red equals <code>0</code> and <code>360</code> degree. Green equals <code>120</code> degree and blue <code>240</code> degree.</p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1030,14 +910,10 @@
                 <figcaption>Color Wheel</figcaption>
             </figure>
         </div>
-
         <aside class="tip blurb">
             <p>Changing the hue makes it easy to get complementing colors. All you need to do is add 180 degrees to get the complementary color.</p>
         </aside>
-
-        
         <h3 id="leanpub-auto-old-syntax-1" class="subsection">Old Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1045,10 +921,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_old_hsl.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1082,7 +956,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -1111,10 +984,7 @@
             <dt>10</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-4" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1122,10 +992,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_old_hsl_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1165,7 +1033,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -1187,16 +1054,12 @@
             <dt>13</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h4 id="leanpub-auto-browser-support-3" class="subsubsection">Browser Support</h4>
         <p>
             The HSL notation is <a href="https://caniuse.com/#feat=mdn-css_types_color_hsl">supported in all browsers</a>. The alpha color values in the old HSLA syntax are also supported. Details you can find on
             <a href="https://caniuse.com/#feat=mdn-css_types_color_alpha">caniuse.com</a>.
         </p>
-
-        
         <h4 id="leanpub-auto-code-samples-5" class="subsubsection">Code Samples</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1207,9 +1070,7 @@
                 <figcaption>Result with the color values hsl(3, 76%, 27%) and hsla(3, 76%, 27%, 50%)</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno">2 </code>  <code class="err">--</code><code class="k">color</code><code class="p">:</code><code class="nb">hsl</code><code class="p">(</code><code class="mi">3</code><code class="p">,</code> <code class="mi">76</code><code class="kt">%</code><code class="p">,</code> <code class="mi">27</code><code class="kt">%</code><code class="p">);</code>
@@ -1218,10 +1079,7 @@
 </pre>
             </div>
         </figure>
-
-        
         <h3 id="leanpub-auto-new-syntax-1" class="subsection">New Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1229,10 +1087,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_new_hsl.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1262,7 +1118,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -1278,7 +1133,6 @@
                     Green = <code>120</code> degree.<br />
                     Blue = <code>240</code> degree.
                 </p>
-
                 <p>In the new CSS Color Module Level 4, you could define the angle as degrees, rads, grads, or turns. For example, <code>1turn</code>.</p>
             </dd>
             <dt>4</dt>
@@ -1296,10 +1150,7 @@
             <dt>8</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-5" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1307,10 +1158,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_new_hsl_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1348,7 +1197,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -1374,16 +1222,12 @@
             <dt>12</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h4 id="leanpub-auto-browser-support-4" class="subsubsection">Browser Support</h4>
         <p>
             The browser support for the space-separated functional color notations is excellent. All major browsers support it already. For details check
             <a href="https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation">caniuse.com</a>.
         </p>
-
-        
         <h4 id="leanpub-auto-code-samples-6" class="subsubsection">Code Samples</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1394,9 +1238,7 @@
                 <figcaption>Result with the color values hsl(295 85% 28%) and hsl(295 85% 28% / .75)</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno">2 </code>  <code class="err">--</code><code class="k">color</code><code class="p">:</code><code class="nb">hsl</code><code class="p">(</code><code class="mi">295</code> <code class="mi">85</code><code class="kt">%</code> <code class="mi">28</code><code class="kt">%</code><code class="p">);</code>
@@ -1405,13 +1247,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="hslexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-2" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>hsl(75deg 10% 70%)</li>
                         <li>hsl(300 100 50)</li>
@@ -1423,7 +1263,6 @@
                 </li>
                 <li>
                     <p>At which degree on the color wheel do you find blue?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>20 degree</li>
                         <li>120 degree</li>
@@ -1432,23 +1271,14 @@
                 </li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-keywords" class="section">Keywords</h2>
-
         <p>The current chapter would not be complete without a mention of the color keywords. You can use these keywords besides the already covered notations.</p>
-
         <h3 id="leanpub-auto-transparent" class="subsection">Transparent</h3>
-
         <p>The <code>transparent</code> keyword gets computed to a transparent black, like <code>#000000</code> or <code>rgb(0, 0, 0, 0)</code>.</p>
-
         <h4 id="leanpub-auto-browser-support-5" class="subsubsection">Browser Support</h4>
         <p>All browsers support the <code>transparent</code> keyword. For details have a look at <a href="https://caniuse.com/#feat=mdn-css_types_color_transparent">caniuse.com</a>.</p>
-
         <h4 id="leanpub-auto-code-sample" class="subsubsection">Code Sample</h4>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="nt">div</code> <code class="p">{</code> 
 <code class="lineno">2 </code>    <code class="k">background-color</code><code class="p">:</code><code class="kc">transparent</code><code class="p">;</code>
@@ -1457,21 +1287,15 @@
 </pre>
             </div>
         </figure>
-
         <h3 id="leanpub-auto-current-color" class="subsection">Current Color</h3>
         <p>
             If you use the <code>currentcolor</code> keyword you get the value of the CSS <code>color:</code> property on the current element. For example, set the color of your element to yellow. Now use the
             <code>currentcolor</code> keyword as the background color. The browser output for this background color would also be yellow.
         </p>
-
         <h4 id="leanpub-auto-browser-support-6" class="subsubsection">Browser Support</h4>
         <p>This keyword is also <a href="https://caniuse.com/#feat=currentcolor">supported in all browsers</a>.</p>
-
-        
         <h4 id="leanpub-auto-code-sample-1" class="subsubsection">Code Sample</h4>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="nt">div</code> <code class="p">{</code> 
 <code class="lineno">2 </code>    <code class="k">background-color</code><code class="p">:</code><code class="n">currentcolor</code><code class="p">;</code>
@@ -1480,25 +1304,18 @@
 </pre>
             </div>
         </figure>
-
         <h3 id="leanpub-auto-named-colors" class="subsection">Named Colors</h3>
-
         <p>
             CSS has taken over some named colors from HTML and extended the list of named colors a lot. You can find a list of all named colors in the <a href="https://www.w3.org/TR/css-color-4/#named-colors">CSS Color Module</a>. All these
             color names resolve to a color in the sRGB color space.
         </p>
-
         <aside class="tip blurb">
             <p>If you look for the smallest CSS file possible. It is worth having a look at the named colors. Some names are even shorter than their hexadecimal notation.</p>
         </aside>
-
         <h4 id="leanpub-auto-browser-support-7" class="subsubsection">Browser Support</h4>
         <p>Color names are <a href="https://caniuse.com/#feat=mdn-css_types_color_keyword_color_values">supported in all browsers</a>.</p>
-
         <h4 id="leanpub-auto-code-sample-2" class="subsubsection">Code Sample</h4>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="nt">div</code> <code class="p">{</code> 
 <code class="lineno">2 </code>    <code class="k">background-color</code><code class="p">:</code><code class="kc">gold</code><code class="p">;</code>
@@ -1507,33 +1324,23 @@
 </pre>
             </div>
         </figure>
-
         <img
             alt=""
             class="fullscreen"
             src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/howcolors_work_book_new_section.png"
             style="width: 100%;"
         />
-
         <h1 id="leanpub-auto-new-ways-to-express-colors" class="chapter">New Ways to Express Colors!</h1>
-
         <p>Have a look at the <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4 working draft</a>. You can see a lot of new ways to express colors in CSS.</p>
-
         <p>All these new notations only support the space-separated functional notation. So commas as separators are not allowed.</p>
-
         <aside class="information blurb">
             <p>Unfortunately, no browser supports these notations yet. But you should prepare yourself for the future and learn them now!</p>
         </aside>
-
         <h2 id="leanpub-auto-code-samples-update" class="section">Code Samples Update</h2>
         <p>As these new formats are not supported yet, you should make a small change to the CSS. You can use the color variables as fallback colors and define the color in the new syntax in the selector.</p>
-
         <p>Unfortunately, you can not use a second CSS variable here. I tested this, and the invalid color notation is not detected when it comes from a variable.</p>
-
         <p>Still, in this way, you can already start defining colors with the new notations!</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">&lt;</code><code class="nt">style</code><code class="p">&gt;</code>
 <code class="lineno"> 2 </code>    <code class="p">:</code><code class="nd">root</code><code class="p">{</code>
@@ -1622,9 +1429,7 @@
 </pre>
             </div>
         </figure>
-
         <p>This will give you the same result as the initial code sample. But in your developer tools, you can see a difference. The browser first tries to understand the new color syntax and after that goes to the fallback.</p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1635,16 +1440,10 @@
                 <figcaption>Developer Tools – Invalid property value</figcaption>
             </figure>
         </div>
-
         <p>In the CSS examples below, you will only see the text color example. You can check other cases, like the background, here as the color notation works the same.</p>
-
-        
         <h2 id="leanpub-auto-hwb" class="section">HWB</h2>
-
         <p>HWB is another functional notation to define colors, similar to HSL. The hue is an angle of <code>0</code> - <code>360</code> degrees, and values of <code>0%</code> - <code>100%</code> for the whiteness and blackness.</p>
-
         <p>This new notation is even easier to understand then the HSL notation. That’s the reason why many color pickers, offer the possibility to select colors based on HWB.</p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 268px;">
                 <img
@@ -1655,10 +1454,7 @@
                 <figcaption>GIMP Color Picker</figcaption>
             </figure>
         </div>
-
-        
         <h3 id="leanpub-auto-syntax-1" class="subsection">Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1666,10 +1462,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_hwb.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1699,7 +1493,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -1731,10 +1524,7 @@
             <dt>8</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-6" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1744,7 +1534,6 @@
                 />
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1782,7 +1571,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 7</dt>
             <dd>These parts are the same as for the color notation without an alpha value. To get details have a look at the section above.</dd>
@@ -1804,13 +1592,9 @@
             <dt>12</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h3 id="leanpub-auto-browser-support-8" class="subsection">Browser Support</h3>
         <p>No browser supports this way of expressing colors yet.</p>
-
-        
         <h3 id="leanpub-auto-code-samples-7" class="subsection">Code Samples</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1821,9 +1605,7 @@
                 <figcaption>Result using the fallback color values #0A5E75 and #0A5E75E6</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno"> 2 </code>    <code class="c">/* Use these as fallbacks now */</code>
@@ -1843,13 +1625,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="hwbexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-3" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>hwb(75deg 30% 70%)</li>
                         <li>hwb(300 25% 75% / 0.5)</li>
@@ -1861,7 +1641,6 @@
                 </li>
                 <li>
                     <p>At which degree on the color wheel do you find green?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>20 degree</li>
                         <li>120 degree</li>
@@ -1870,17 +1649,12 @@
                 </li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-lab" class="section">Lab</h2>
-
         <p>The CIELab color space represents the complete range of colors a human can see. Once major browsers support this notation it means way more colors for you!</p>
-
         <p>
             For the second and third function parameter we move along the a and b axes of the color space. There are positive and negative values allowed. Positive values along the a-axis give you a red while negative values are green. On
             the b-axis, positive values are yellow and negative values are blue.
         </p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1891,10 +1665,7 @@
                 <figcaption>A visual of the CIELab a and b axes.</figcaption>
             </figure>
         </div>
-
-        
         <h3 id="leanpub-auto-syntax-2" class="subsection">Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1902,10 +1673,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_lab.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -1935,7 +1704,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -1958,10 +1726,7 @@
             <dt>8</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-7" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -1971,7 +1736,6 @@
                 />
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2009,7 +1773,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 7</dt>
             <dd>These parts are the same as for the color notation without an alpha value. To get details have a look at the section above.</dd>
@@ -2031,13 +1794,9 @@
             <dt>12</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h3 id="leanpub-auto-browser-support-9" class="subsection">Browser Support</h3>
         <p>No browser supports this way of expressing colors yet.</p>
-
-        
         <h3 id="leanpub-auto-code-samples-8" class="subsection">Code Samples</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2048,9 +1807,7 @@
                 <figcaption>Result using the fallback color values #9C2160 and #9C216066</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno"> 2 </code>    <code class="c">/* Use these as fallbacks now */</code>
@@ -2070,13 +1827,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="labexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-4" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>lab(100%, 100, 160)</li>
                         <li>lab(50% 50 -160)</li>
@@ -2088,7 +1843,6 @@
                 </li>
                 <li>
                     <p>What range does the first parameter allow?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>0 - 400%</li>
                         <li>0 - 100%</li>
@@ -2097,14 +1851,9 @@
                 </li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-lch" class="section">LCH</h2>
-
         <p>Another new way to express colors in the CSS 4 working draft is the <code>lch()</code> notation.</p>
-
         <h3 id="leanpub-auto-syntax-3" class="subsection">Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2112,10 +1861,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_lch.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2145,7 +1892,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -2173,10 +1919,7 @@
             <dt>8</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-8" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2184,10 +1927,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_lch_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2225,7 +1966,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 7</dt>
             <dd>These parts are the same as for the color notation without an alpha value. To get details have a look at the section above.</dd>
@@ -2247,13 +1987,9 @@
             <dt>12</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h3 id="leanpub-auto-browser-support-10" class="subsection">Browser Support</h3>
         <p>No browser supports this way of expressing colors yet.</p>
-
-        
         <h3 id="leanpub-auto-code-samples-9" class="subsection">Code Samples</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2264,9 +2000,7 @@
                 <figcaption>Result using the fallback color values #0F2225 and #0F222599</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno"> 2 </code>    <code class="c">/* Use these as fallbacks now */</code>
@@ -2286,13 +2020,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="lchexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-5" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>lch(100% 100 160deg)</li>
                         <li>lch(50% 50 60deg)</li>
@@ -2304,7 +2036,6 @@
                 </li>
                 <li>
                     <p>What range of values can you use for the second parameter?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>0 - 100</li>
                         <li>0 - 230</li>
@@ -2313,22 +2044,16 @@
                 </li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-color" class="section">Color</h2>
-
         <p>
             With the notation <code>color()</code>, CSS will allow you to specify colors in reference to a color profile. You can pass the color profile as the first parameter. You can pass one of the predefined color profiles
             (<code>srgb</code>, <code>prophoto-rgb</code>, <code>display-p3</code>, <code>rec-2020</code>, <code>a98-rgb</code>) or you define an own profile.
         </p>
-
         <p>
             If you want to add your own profile, you need to specify it first with a <code>@color-profile</code> rule. Then you can use it within the <code>color()</code> function, this works almost like defining new fonts via
             <code>@font-face</code>.
         </p>
-
         <h3 id="leanpub-auto-syntax-4" class="subsection">Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2336,10 +2061,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_color.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2373,7 +2096,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -2394,10 +2116,7 @@
             <dt>10</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-9" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2405,10 +2124,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_color_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2450,7 +2167,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 9</dt>
             <dd>These parts are the same as for the color notation without an alpha value. To get details have a look at the section above.</dd>
@@ -2472,13 +2188,9 @@
             <dt>14</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h3 id="leanpub-auto-browser-support-11" class="subsection">Browser Support</h3>
         <p>No browser supports this way of expressing colors yet.</p>
-
-        
         <h3 id="leanpub-auto-code-samples-10" class="subsection">Code Samples</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2489,9 +2201,7 @@
                 <figcaption>Result using the fallback color #780600</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno"> 2 </code>    <code class="c">/* Use these as fallbacks now */</code>
@@ -2523,13 +2233,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="colorexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-6" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>color(display-p3 0.5 0.5 0.2)</li>
                         <li>color(display-p3, 0.5 0.5 0.2)</li>
@@ -2540,17 +2248,12 @@
                 <li><p>What range of values you can pass for the second and following parameters?</p></li>
             </ol>
         </div>
-
-        
         <h2 id="leanpub-auto-gray" class="section">Gray</h2>
-
         <p>
             The <code>gray()</code> functional notation gives you completely desaturated colors. You only need to pass a single parameter, or two if you want to specify an alpha value. A value of <code>50</code>, so
             <code>gray(50)</code> would be right between black and white.
         </p>
-
         <h3 id="leanpub-auto-syntax-5" class="subsection">Syntax</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2558,10 +2261,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_gray.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2583,7 +2284,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1</dt>
             <dd>
@@ -2596,10 +2296,7 @@
             <dt>4</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
-        
         <h4 id="leanpub-auto-alpha-10" class="subsubsection">Alpha</h4>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2607,10 +2304,8 @@
                     src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/syntax_gray_alpha.png"
                     style="width: 100%;"
                 />
-                
             </figure>
         </div>
-
         <table class="with-caption" style="width: 100%;">
             <caption>
                 Breakdown
@@ -2640,7 +2335,6 @@
                 </tr>
             </tbody>
         </table>
-
         <dl>
             <dt>1 till 3</dt>
             <dd>These parts are the same as for the color notation without an alpha value to get details have a look in the section above.</dd>
@@ -2662,13 +2356,9 @@
             <dt>8</dt>
             <dd>The functions closing bracket.</dd>
         </dl>
-
         <h3 id="leanpub-auto-browser-support-12" class="subsection">Browser Support</h3>
         <p>No browser supports this way of expressing colors yet.</p>
-
-        
         <h3 id="leanpub-auto-code-samples-11" class="subsection">Code Samples</h3>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2679,9 +2369,7 @@
                 <figcaption>Result using the fallback color for gray(35)</figcaption>
             </figure>
         </div>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">:</code><code class="nd">root</code><code class="p">{</code>
 <code class="lineno"> 2 </code>    <code class="c">/* Use these as fallbacks now */</code>
@@ -2701,13 +2389,11 @@
 </pre>
             </div>
         </figure>
-
         <div id="grayexercise" class="quiz">
             <h3 id="leanpub-auto-exercise-7" class="subsection">Exercise</h3>
             <ol class="quiz-questions">
                 <li>
                     <p>Which notation is invalid?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>gray(60 / 60%)</li>
                         <li>gray(70)</li>
@@ -2717,7 +2403,6 @@
                 <li><p>What does the first parameter define?</p></li>
                 <li>
                     <p>What range of values can you pass for the second parameter?</p>
-
                     <ol class="quiz-choices" type="a">
                         <li>0 - 100</li>
                         <li>0 - 255</li>
@@ -2732,20 +2417,14 @@
             src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/howcolors_work_book_new_section-1.png"
             style="width: 100%;"
         />
-
         <h1 id="leanpub-auto-cool-ways-to-use-colors" class="chapter">Cool Ways to Use Colors!</h1>
-
         <p>
             In this chapter, I want to show you some cool ways to use colors in CSS. All following examples work with any of the above notations. Of course, you need to keep the notations browser support in mind, and if you use one of the
             new ways add a fallback color.
         </p>
-
         <h2 id="leanpub-auto-text-gradient" class="section">Text Gradient</h2>
-
         <p>The CSS property to change the foreground or text color is <code>color</code>. In the examples above I showed you how to set a normal color as text color with the following code.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">.</code><code class="nc">textsample</code><code class="p">{</code>
 <code class="lineno">2 </code>	<code class="k">color</code><code class="p">:</code><code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code>
@@ -2755,9 +2434,7 @@
 </pre>
             </div>
         </figure>
-
         <p>Now the cool part! Did you know you can use a CSS gradient as your text background? To get an idea of what is possible in modern browsers have a look at the screenshot of my personal website.</p>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2768,20 +2445,14 @@
                 <figcaption>Screenshot of azettl.net</figcaption>
             </figure>
         </div>
-
         <p>
             The trick here is to use the CSS properties <code>background-clip</code> and <code>text-fill-color</code>. You can use this if you do not need to
             <a href="https://caniuse.com/#feat=mdn-css_properties_-webkit-text-fill-color">support Internet Explorer</a>.
         </p>
-
         <p>First, you will have to decide on a CSS gradient you want to use. If you are not sure how to create a gradient you can use any <a href="https://convertingcolors.com/css-gradient.html">online generator</a> to create one.</p>
-
         <p>Look at the example code from the previous chapters. If you want to use a gradient as text background you will have to change the <code>.textsample</code> class.</p>
-
         <p>Additionally to the <code>color</code>, you have to set a <code>background-image</code>. This is where you pass your gradient, in this example a <code>linear-gradient</code>.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">.</code><code class="nc">textsample</code><code class="p">{</code>
 <code class="lineno">2 </code>	<code class="k">color</code><code class="p">:</code><code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code> 
@@ -2794,7 +2465,6 @@
 </pre>
             </div>
         </figure>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 395px;">
                 <img
@@ -2805,15 +2475,12 @@
                 <figcaption>Current Result</figcaption>
             </figure>
         </div>
-
         <p>
             Until now you only set the gradient as a background of your element, but the text has still the same color as before. Now you need to add the <code>background-clip</code> and <code>text-fill-color</code> properties. The
             <code>text-fill-color</code> you have to set to <code>transparent</code> and the <code>background-clip</code> you set to <code>text</code>. With this parameters, the background gradient gets clipped to the text and the text gets
             a transparent filling.
         </p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno"> 1 </code><code class="p">.</code><code class="nc">textsample</code><code class="p">{</code>
 <code class="lineno"> 2 </code>	<code class="k">color</code><code class="p">:</code><code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code> 
@@ -2830,7 +2497,6 @@
 </pre>
             </div>
         </figure>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2841,17 +2507,12 @@
                 <figcaption>The Final Result</figcaption>
             </figure>
         </div>
-
         <aside class="tip blurb">
             <p>With the CSS property <code>border-image</code> you can use your gradient as border of an element!</p>
         </aside>
-
         <h2 id="leanpub-auto-box-shadows-as-borders" class="section">Box Shadows as Borders</h2>
-
         <p>Wanting more than one border on an element is one unusual but cool use case for box shadows. In this example, we will use the <code>.shadowsample</code> class of the code from the above chapters.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">.</code><code class="nc">shadowsample</code><code class="p">{</code>
 <code class="lineno">2 </code>	<code class="k">text-shadow</code><code class="p">:</code><code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code>
@@ -2861,11 +2522,8 @@
 </pre>
             </div>
         </figure>
-
         <p>Let’s get rid of the blur and spread-radius first.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">.</code><code class="nc">shadowsample</code><code class="p">{</code>
 <code class="lineno">2 </code>	<code class="k">text-shadow</code><code class="p">:</code><code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code>
@@ -2875,7 +2533,6 @@
 </pre>
             </div>
         </figure>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 395px;">
                 <img
@@ -2886,11 +2543,8 @@
                 <figcaption>The result without blur and spread-radius</figcaption>
             </figure>
         </div>
-
         <p>The <code>box-shadow</code> property allows you to pass multiple shadows by separating them with a comma. This you can use to create a basic border effect by adjusting the offset parameters.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">.</code><code class="nc">shadowsample</code><code class="p">{</code>
 <code class="lineno">2 </code>	<code class="k">text-shadow</code><code class="p">:</code><code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code>
@@ -2901,7 +2555,6 @@
 </pre>
             </div>
         </figure>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2912,11 +2565,8 @@
                 <figcaption>A single border via the box-shadow property</figcaption>
             </figure>
         </div>
-
         <p>To add a second border around the first, all you need to do is add another set of box shadows. I use 8 pixels as an offset to get the same border width and the hex color <code>#edeb00</code> as border color.</p>
-
         <figure class="code" dir="ltr">
-            
             <div class="highlight">
                 <pre><code></code><code class="lineno">1 </code><code class="p">.</code><code class="nc">shadowsample</code><code class="p">{</code>
 <code class="lineno">2 </code>	<code class="k">text-shadow</code><code class="p">:</code><code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="mi">4</code><code class="kt">px</code> <code class="nf">var</code><code class="p">(</code><code class="o">--</code><code class="kc">color</code><code class="p">);</code>
@@ -2928,7 +2578,6 @@
 </pre>
             </div>
         </figure>
-
         <div class="figure-wrapper center">
             <figure class="image block" style="width: 396px;">
                 <img
@@ -2939,18 +2588,15 @@
                 <figcaption>Two borders via the box-shadow property</figcaption>
             </figure>
         </div>
-
         <aside class="tip blurb">
             <p>This way you can even add a third, fourth, or any amount of borders to your element.</p>
         </aside>
-
         <img
             alt=""
             class="fullscreen"
             src="https://raw.githubusercontent.com/azettl/printcss.examples/main/HTML%20Examples/Books%20and%20Magazines/howcolors.work/assets/howcolors_work_book_thanks.png"
             style="width: 100%;"
         />
-
         <h1 id="leanpub-answers" class="chapter">Answers to Exercises</h1>
         <div class="answers">
             <h3 id="leanpub-auto-current-ways-to-express-colors-1" class="subsection">Current Ways to Express Colors!</h3>
