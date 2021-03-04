@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
 @page{
-	size:7.0in 9.1in;
+	size:14.8cm 21cm; /* A5 Format https://formaty.info/en/A5/ */
 }
 
 @page:left{
@@ -104,14 +104,14 @@ h2.toc{
 }
 
 ul.toc {
-  max-width:100%;
+  margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  list-style: none
+  overflow: hidden;
+  list-style: none;
 }
 
 ul.toc li ul{
-  list-style: none
+  list-style: none;
 }
 
 ul.toc li:after {
@@ -121,17 +121,8 @@ ul.toc li:after {
   content:
 ". . . . . . . . . . . . . . . . . . . . "
 ". . . . . . . . . . . . . . . . . . . . "
-". . . . . . . . . . . . . "
-}
-
-ul.toc li ul li:after {
-  float: left;
-  width: 0;
-  white-space: nowrap;
-  content:
 ". . . . . . . . . . . . . . . . . . . . "
 ". . . . . . . . . . . . . . . . . . . . "
-". . . . . . . . . "
 }
 
 ul.toc a{
