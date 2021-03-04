@@ -86,7 +86,9 @@ body{
   string-set: heading content();
 }
 
-.quiz{
+.quiz,
+.keep-together,
+figure{
   break-inside: avoid;
   page-break-inside: avoid;
 }
