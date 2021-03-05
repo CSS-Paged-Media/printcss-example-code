@@ -95,11 +95,12 @@ figure.image{
 
 img.fullscreen{
   page: fullscreenimage;
+  display:block;
   max-width:100%;
   min-width:100%;
 }
 
-h2.toc{
+.pagewithoutheader{
   page: pagewithoutheader;
 }
 
