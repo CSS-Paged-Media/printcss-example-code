@@ -100,7 +100,7 @@ img.fullscreen{
   min-width:100%;
 }
 
-h2.toc{
+.pagewithoutheader{
   page: pagewithoutheader;
 }
 
