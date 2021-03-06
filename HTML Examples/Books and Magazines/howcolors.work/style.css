@@ -100,7 +100,7 @@ img.fullscreen{
   min-width:100%;
 }
 
-.pagewithoutheader{
+h2.toc{
   page: pagewithoutheader;
 }
 
@@ -158,11 +158,15 @@ a:not([href^="#"])::after {
   float:footnote;
   content: " ("attr(href)")";
   font-style: italic;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .note{
   float:footnote;
   font-style: italic;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 figure{
