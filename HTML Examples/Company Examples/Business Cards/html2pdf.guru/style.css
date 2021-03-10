@@ -1,0 +1,40 @@
+@page{
+  size:3.5in 2in;
+  marks:crop;
+  bleed:0.125in;
+  margin:0.25in;
+} 
+
+@page:first{
+  background:rgb(188, 11, 6);
+  background-image:url(https://www.html2pdf.guru/assets/img/html2pdf.guru.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin:0;
+}
+
+body{
+  font-size:10pt;
+}
+
+b{
+  color:rgb(188, 11, 6);
+  font-size:1.5rem;
+}
+
+.head{
+  display:inline-block;
+  margin-bottom: .5rem;
+}
+
+.foot{
+  display:inline-block;
+  margin-top: .75rem;
+  border-left:.25rem solid rgb(188, 11, 6);
+  padding-left:.5rem;
+}
+
+.break{
+  page-break-after: always;
+  break-after: always;
+}
