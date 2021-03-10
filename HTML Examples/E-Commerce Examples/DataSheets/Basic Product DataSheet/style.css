@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@page{
+	size:210mm 297mm;
+  margin:1cm 3cm 1cm 2cm;
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-bottom{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    width:210mm;
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+}
+
+body{
+  margin:0 1cm 0 0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  font-size:10pt;
+  color:#000222;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:inside;
+}
+
+.circle{
+  width:1cm;
+  height:1cm;
+  border:.6cm solid #44b75b;
+  border-radius:100%;
+  display:inline-block;
+}
+
+.logo-area h1{
+  display:inline-block;
+  text-transform:uppercase;
+  color:#000222;
+  width:5cm;
+  line-height:1;
+  margin-left:0.25cm;
+  position:relative;
+  top:-.5cm; 
+}
+
+.images{
+  text-align:center;
+}
+
+.images img{
+  max-width: 100%;
+}
+
+.infos .technical{
+  width:49%;
+  float:left;
+}
+
+.infos .packaging{
+  width:49%;
+  float:right;
+}
+
+.infos table{
+  border-collapse: collapse;
+}
+
+.infos table td,.infos table th{
+  vertical-align: top;
+  text-align: left;
+  padding:8px 16px;
+  border:0;
+  margin:0;
+}
+
+.infos table th{
+  background-color:#44b75b;
+  color:#000222;
+}
+
+.light{
+  color:#44b75b;
+}
+
+.price{
+  text-align: right;
+  font-weight:900;
+  font-size:64px;
+  position: absolute;
+  bottom: 1cm;
+  right: 1cm;
+}
