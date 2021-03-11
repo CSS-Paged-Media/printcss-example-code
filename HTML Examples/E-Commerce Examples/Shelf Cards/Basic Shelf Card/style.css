@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@page{
+	size:5.5in 3.5in;
+  margin:.25in;
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-bottom{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    width:5.5in;
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  font-size:10pt;
+  color:#000222;
+}
+
+h1, h2{
+  margin:0;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:inside;
+}
+
+.infos{
+  margin-top:.125in;
+}
+
+.infos .left{
+  width:49%;
+  float:left;
+}
+
+.infos .right{
+  width:49%;
+  float:right;
+}
+
+.infos table{
+  border-collapse: collapse;
+}
+
+.infos table td,.infos table th{
+  vertical-align: top;
+  text-align: left;
+  padding:8px 16px;
+  border:0;
+  margin:0;
+}
+
+.infos table th{
+  background-color:#44b75b;
+  color:#000222;
+}
+
+.light{
+  color:#44b75b;
+}
+
+img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom:.075in;
+  width:2in;
+}
+
+.price{
+  text-align: right;
+  font-weight:900;
+  font-size:32pt;
+  position: absolute;
+  bottom: 0;
+  right: .125in;
+}
