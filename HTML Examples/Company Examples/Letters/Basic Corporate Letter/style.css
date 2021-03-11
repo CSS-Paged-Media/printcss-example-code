@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+@page{
+	size:210mm 297mm;
+  margin:6cm 3cm 1cm 3cm;
+  
+  @top-left{
+  	content:element(coverLogo);
+  }
+  
+  @top-right{
+    content:element(coverAddress);
+  }
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-bottom{
+    content:"";
+  	background:#000222;
+  }
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    width:210mm;
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+}
+
+.logo-area{
+	position:running(coverLogo);
+	margin-left:-1.5cm;
+}
+
+.address-area{
+	position:running(coverAddress);
+	margin-right:1.5cm;
+	text-align:right;
+}
+
+.circle{
+	width:1cm;
+  	height:1cm;
+  	border:.4cm solid #44b75b;
+  	border-radius:100%;
+    display:inline-block;
+}
+
+.logo-area h1{
+	display:inline-block;
+  	text-transform:uppercase;
+  	color:#000222;
+  	width:5cm;
+  	line-height:1;
+  	margin-left:0.25cm;
+  	position:relative;
+    top:-.25cm; 
+}
+
+.signature{
+  	position:absolute;
+  	padding-left:.5cm;
+  	bottom:.4cm;
+  	right:.5cm;
+  	background-color:#fff;
+}
+
+img{
+  display:block;
+}
+
+.to-address-area{
+  margin-top:-1cm;
+  margin-left:-1.5cm;
+}
+
+.content{
+	padding:0 1cm 2cm 1cm;
+	background-color:#fff;
+	position:absolute;
+	top:4cm;
+	left:0;
+}
+
+.content h1{
+	color:#000222;
+  	margin-top:0;
+  	text-transform: capitalize;
+}
+
+.green{
+	color:#44b75b;
+  	display:block;
+}
+
+.green-border{
+	border:.125cm solid #44b75b;
+  	height:16cm;
+  	width:8cm;
+  	position:absolute;
+  	top:5cm;
+  	left:-1.5cm;
+}
