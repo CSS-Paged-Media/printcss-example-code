@@ -1,0 +1,534 @@
+/* Sample Product Data and Image from https://github.com/SAP/openui5/tree/master/src/sap.m/test/sap/m/demokit/cart/webapp/localService/mockdata */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+@page{
+	size:210mm 297mm;
+	margin:3cm 3cm 1cm 3cm;
+	padding:0 1cm 0 0;
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+
+  @top-left-corner{
+	background:transparent;
+  }
+
+  @left-top{
+	background:transparent;
+	}
+
+  @left-middle{
+	background:transparent;
+	}
+
+  @left-bottom{
+	  background:transparent;
+  }
+  
+  @right-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-bottom{
+    content:"";
+  	background:#000222;
+  }
+}
+
+@page:first{
+
+  margin:6cm 6cm 1cm 2cm;
+  padding:0;
+
+  @top-left{
+  	content:element(coverLogo);
+  }
+  
+  @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+
+  @top-left-corner{
+	background:transparent;
+  }
+
+  @left-top{
+	background:transparent;
+	}
+
+  @left-middle{
+	background:transparent;
+	}
+
+  @left-bottom{
+	  background:transparent;
+  }
+}
+
+@page LastPage{
+
+  margin:0 0 1cm 0;
+  padding:0;
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+
+  @top-left-corner{
+	background:transparent;
+  }
+
+  @left-top{
+	background:transparent;
+	}
+
+  @left-middle{
+	background:transparent;
+	}
+
+  @left-bottom{
+	  background:transparent;
+  }
+
+  @top-right-corner{
+	background:transparent;
+  }
+
+  @right-top{
+	background:transparent;
+	}
+
+  @right-middle{
+	background:transparent;
+	}
+
+  @right-bottom{
+	  background:transparent;
+  }
+}
+
+@page:left{
+	padding:0 0 0 1cm;
+  
+  @bottom-right-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-right{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-center{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @bottom-left-corner{
+    content:"";
+  	background:#44b75b;
+  }
+  
+  @top-left-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @left-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @left-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @left-bottom{
+    content:"";
+  	background:#000222;
+  }
+
+  @top-right-corner{
+	background:transparent;
+  }
+
+  @right-top{
+	background:transparent;
+	}
+
+  @right-middle{
+	background:transparent;
+	}
+
+  @right-bottom{
+	  background:transparent;
+  }
+}
+
+@page CenterImage{
+  margin:1.5cm 1.5cm 1cm 1.5cm;
+  padding:0;
+
+  @top-left-corner{
+	background:transparent;
+  }
+
+  @left-top{
+	background:transparent;
+	}
+
+  @left-middle{
+	background:transparent;
+	}
+
+  @left-bottom{
+	  background:transparent;
+  }
+
+  @top-right-corner{
+	background:transparent;
+  }
+
+  @right-top{
+	background:transparent;
+	}
+
+  @right-middle{
+	background:transparent;
+	}
+
+  @right-bottom{
+	  background:transparent;
+  }
+}
+
+.logo-area{
+	position:running(coverLogo);
+}
+
+.circle{
+	width:2cm;
+  	height:2cm;
+  	border:.4cm solid #44b75b;
+  	border-radius:100%;
+    display:inline-block;
+}
+
+.logo-area h1,
+.last-logo-area h1{
+	display:inline-block;
+  	text-transform:uppercase;
+  	color:#000222;
+  	width:5cm;
+  	line-height:1;
+  	margin-left:0.25cm;
+  	position:relative;
+    top:-.25cm; 
+}
+
+.green-area{
+	background:#44b75b;
+  	margin-left:-2cm;
+  	width:210mm;
+  	padding:2cm;
+}
+
+.green-area h1{
+  	text-transform:uppercase;
+  	color:#000222;
+  margin:0;
+}
+
+.green-area h2{
+  	text-transform:uppercase;
+  	color:#fff;
+  margin:0;
+}
+
+.green-area p{
+  	color:#000222;
+  	width:11cm;
+  margin-bottom:0;
+}
+
+.cover{
+	page-break-after:always;
+  	break-after:always;
+}
+
+.cover img{
+  	margin-left:-2cm;
+  	width:15cm;
+  	height:12.55cm;
+}
+
+.last{
+	page: LastPage;
+  	page-break-before:always;
+  	break-before:always;
+    display:flex;
+  flex-wrap: wrap
+}
+
+.last img,
+.last > div{
+  	width:105mm;
+  	height:14.35cm;
+  	margin:0;
+  	display:flex;
+  	justify-content:center;
+    align-items: center;
+}
+
+.last p{
+  	margin:2cm;
+  	color:#000222;
+}
+
+.last .blue-area{
+  	background:#000222;
+}
+
+.page-right-blue{
+	page: RightBlue;
+}
+
+
+.page-right-blue .content{
+	padding:0 1cm 2cm 1cm;
+}
+
+.page-right-blue .content h1{
+	color:#000222;
+  	margin-top:0;
+  	text-transform: capitalize;
+}
+
+.page-right-blue .content h1 .green{
+	color:#44b75b;
+}
+
+.page-center-image{
+	page: CenterImage;
+}
+
+.page-center-image img{
+	width:100%;
+}
+
+.page-center-image  h1{
+	color:#000222;
+  	text-transform: capitalize;
+  	text-align:center;
+}
+
+.page-center-image  h1 .green{
+	color:#44b75b;
+  	display:block;
+}
+
+.page-center-image .content{
+	width:9.25cm;
+  	padding-right:.5cm;
+  	background-color:#fff;
+  	position:absolute;
+  	left:0;
+  	top:15.5cm;
+  	z-index:3;
+}
+
+.page-center-image .content p:first-of-type{
+	margin:0;
+}
+
+.page-center-image blockquote{
+	width:8.75cm;
+  	margin:0;
+	border:.125cm solid #44b75b;
+  	padding:.5cm;
+  	background-color:#fff;
+  	position:absolute;
+  	right:0;
+  	top:15.5cm;
+  	z-index:2;
+}
+
+.page-center-image .green-border{
+	width:8.75cm;
+	height:8.75cm;
+	border:.125cm solid #44b75b;
+  	position:absolute;
+  	left:4.625cm;
+  	bottom:1cm;
+  	z-index:1;
+}
+
+.product{
+  page:product;
+  break-before:always;
+  page-break-before:always;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  font-size:10pt;
+  color:#000222;
+}
+
+.product ul{
+  margin:0;
+  padding:0;
+  list-style:inside;
+}
+.product .images{
+  text-align:center;
+}
+
+.product .images img{
+  max-width: 100%;
+}
+
+.product .infos .technical{
+  width:49%;
+  float:left;
+}
+
+.product .infos .packaging{
+  width:49%;
+  float:right;
+}
+
+.product .infos table{
+  border-collapse: collapse;
+}
+
+.product .infos table td,.infos table th{
+  vertical-align: top;
+  text-align: left;
+  padding:8px 16px;
+  border:0;
+  margin:0;
+}
+
+.product .infos table th{
+  background-color:#44b75b;
+  color:#000222;
+}
+
+.product .light{
+  color:#44b75b;
+}
+
+.product .price{
+  text-align: right;
+  font-weight:900;
+  font-size:64px;
+  position: absolute;
+  bottom: 1cm;
+  right: 1cm;
+}
+
+ul.toc {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+  }
+  
+  ul.toc li ul{
+	list-style: none;
+  }
+  
+  ul.toc li:after {
+	float: left;
+	width: 0;
+	white-space: nowrap;
+	content:
+  ". . . . . . . . . . . . . . . . . . . . "
+  ". . . . . . . . . . . . . . . . . . . . "
+  ". . . . . . . . . . . . . . . . . . . . "
+  ". . . . . . . . . . . . . . . . . . . . "
+  }
+  
+  ul.toc a{
+	color:inherit;
+	text-decoration: none;
+  }
+  
+  ul.toc a:first-child {
+	padding-right: 0.33em;
+	background: white
+  }
+  
+  ul.toc a::after {
+	float: right;
+	padding-left: 0.33em;
+	background: white;
+	position: relative;
+	z-index: 1;
+	content: target-counter(attr(href), page); 
+  }
