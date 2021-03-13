@@ -356,12 +356,7 @@ body{
 }
 
 .page-right-blue{
-	page: RightBlue;
-}
-
-
-.page-right-blue .content{
-	padding:0 1cm 2cm 1cm;
+	page: CenterImage;
 }
 
 .page-right-blue .content h1{
@@ -508,6 +503,7 @@ ul.toc {
 	width: 0;
 	white-space: nowrap;
 	content:
+  ". . . . . . . . . . . . . . . . . . . . "
   ". . . . . . . . . . . . . . . . . . . . "
   ". . . . . . . . . . . . . . . . . . . . "
   ". . . . . . . . . . . . . . . . . . . . "
