@@ -10,4 +10,4 @@ No Video yet.
 
 [View directly on PrintCSS.live](https://printcss.live/X46dBBXd79)
 
-Renders best with WeasyPrint and 
+Renders best with WeasyPrint 
