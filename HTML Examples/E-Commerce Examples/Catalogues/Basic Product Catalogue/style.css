@@ -21,7 +21,8 @@ body{
   }
   
   @bottom-center{
-    content:"";
+	content:"";
+	width:100%;
   	background:#44b75b;
   }
   
@@ -45,6 +46,7 @@ body{
   }
 
   @left-top{
+	content:"";
 	background:transparent;
 	}
 
@@ -85,12 +87,17 @@ body{
     content:"";
   	background:#000222;
   }
+  
+  @right-top{
+	content: "";
+  }
 
   @top-left-corner{
 	background:transparent;
   }
 
   @left-top{
+	content: "";
 	background:transparent;
 	}
 
@@ -120,6 +127,7 @@ body{
   
   @bottom-center{
     content:"";
+	width:100%;
   	background:#44b75b;
   }
   
@@ -138,6 +146,7 @@ body{
   }
 
   @left-top{
+	  content:"";
 	background:transparent;
 	}
 
@@ -154,6 +163,7 @@ body{
   }
 
   @right-top{
+	content: "";
 	background:transparent;
 	}
 
@@ -181,6 +191,7 @@ body{
   
   @bottom-center{
     content:"";
+	width:100%;
   	background:#44b75b;
   }
   
@@ -219,6 +230,7 @@ body{
   }
 
   @right-top{
+	  content:"";
 	background:transparent;
 	}
 
@@ -240,6 +252,7 @@ body{
   }
 
   @left-top{
+	  content:"";
 	background:transparent;
 	}
 
@@ -256,6 +269,7 @@ body{
   }
 
   @right-top{
+	content:"";
 	background:transparent;
 	}
 
