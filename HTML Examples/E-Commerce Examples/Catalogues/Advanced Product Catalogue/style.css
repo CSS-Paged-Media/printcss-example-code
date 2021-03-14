@@ -233,13 +233,33 @@
     transform: translateX(-50%);
   }
 
-  .page-center-image  h1{
+  .terms{
+    page-break-before: right;
+    break-before: right;
+  }
+
+  .terms .columns{
+    text-align: justify;
+    column-count: 3;
+    column-gap: .5cm;
+    font-size: 8pt;
+  }
+
+  .terms .columns p{
+    text-align-last: left;
+  }
+
+  .terms .columns p:first-of-type{
+    margin-top:0;
+  }
+
+  .terms h1, .page-center-image h1{
     color:#000222;
       text-transform: capitalize;
       text-align:center;
   }
 
-  .page-center-image  h1 .green{
+  .terms h1 .green, .page-center-image h1 .green{
     color:#44b75b;
       display:block;
   }
@@ -463,7 +483,12 @@
       font-size:36pt;
       font-weight: bold;
     }
-
+    .color-page-green{
+      background-color: #44b75b;
+    }
+    .color-page-white{
+      background-color: white;
+    }
     .color-page-AC::after, .category-AC::after{ content:"Accessories"; }
     .color-page-DC::after, .category-DC::after{ content:"Desktop Computers"; }
     .color-page-FS::after, .category-FS::after{ content:"Flat Screens"; }
