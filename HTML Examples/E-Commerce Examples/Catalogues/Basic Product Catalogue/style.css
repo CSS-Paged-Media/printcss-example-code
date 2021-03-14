@@ -21,8 +21,7 @@ body{
   }
   
   @bottom-center{
-	content:"";
-	width:100%;
+    content:"";
   	background:#44b75b;
   }
   
@@ -46,7 +45,6 @@ body{
   }
 
   @left-top{
-	content:"";
 	background:transparent;
 	}
 
@@ -87,17 +85,12 @@ body{
     content:"";
   	background:#000222;
   }
-  
-  @right-top{
-	content: "";
-  }
 
   @top-left-corner{
 	background:transparent;
   }
 
   @left-top{
-	content: "";
 	background:transparent;
 	}
 
@@ -127,7 +120,6 @@ body{
   
   @bottom-center{
     content:"";
-	width:100%;
   	background:#44b75b;
   }
   
@@ -146,7 +138,6 @@ body{
   }
 
   @left-top{
-	  content:"";
 	background:transparent;
 	}
 
@@ -163,7 +154,6 @@ body{
   }
 
   @right-top{
-	content: "";
 	background:transparent;
 	}
 
@@ -191,7 +181,6 @@ body{
   
   @bottom-center{
     content:"";
-	width:100%;
   	background:#44b75b;
   }
   
@@ -230,7 +219,6 @@ body{
   }
 
   @right-top{
-	  content:"";
 	background:transparent;
 	}
 
@@ -252,7 +240,6 @@ body{
   }
 
   @left-top{
-	  content:"";
 	background:transparent;
 	}
 
@@ -269,7 +256,6 @@ body{
   }
 
   @right-top{
-	content:"";
 	background:transparent;
 	}
 
@@ -370,7 +356,12 @@ body{
 }
 
 .page-right-blue{
-	page: CenterImage;
+	page: RightBlue;
+}
+
+
+.page-right-blue .content{
+	padding:0 1cm 2cm 1cm;
 }
 
 .page-right-blue .content h1{
@@ -521,7 +512,6 @@ ul.toc {
   ". . . . . . . . . . . . . . . . . . . . "
   ". . . . . . . . . . . . . . . . . . . . "
   ". . . . . . . . . . . . . . . . . . . . "
-  ". . . . . . . . . . . . . . . . . . . . "
   }
   
   ul.toc a{
@@ -541,33 +531,4 @@ ul.toc {
 	position: relative;
 	z-index: 1;
 	content: target-counter(attr(href), page); 
-  }
-
-  .toc-content h2{
-	  background:#000222;
-	  color:white;
-	  font-size:12pt;
-	  padding:.75mm .75mm .75mm 1.5mm;
-  }
-
-  .toc-content h2.AC{ color:white;background:#00B8FE;}
-  .toc-content h2.DC{ color:white;background:#DD7EE5;}
-  .toc-content h2.FS{ color:white;background:#F28444;}
-  .toc-content h2.KB{ color:white;background:#00BC94;}
-  .toc-content h2.LT{ color:white;background:#8E97FF;}
-  .toc-content h2.PR{ color:black;background:#FFF68E;}
-  .toc-content h2.ST{ color:white;background:#FF8E97;}
-  .toc-content h2.MI{ color:white;background:#E2A262;}
-  .toc-content h2.CSA{ color:white;background:#C2A0F1;}
-  .toc-content h2.GC{ color:black;background:#CFF1A0;}
-  .toc-content h2.SC{ color:white;background:#ED2E32;}
-  .toc-content h2.SP{ color:white;background:#883E46;}
-  .toc-content h2.SW{ color:white;background:#917178;}
-  .toc-content h2.TC{ color:white;background:#159A6B;}
-  .toc-content h2.SV{ color:white;background:#656CDA;}
-  .toc-content h2.FST{ color:white;background:#5565B0;}
-
-  .keep-together{
-	  page-break-inside: avoid;
-	  break-inside: avoid;
   }
