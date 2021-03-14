@@ -16,36 +16,11 @@
   }
 
   @page:first{
+    margin:5cm 0 1cm 0;
+    background:#44b75b;
 
-    margin:6cm 6cm 1cm 2cm;
-    padding:0;
-
-    @top-left{
-      content:element(coverLogo);
-    }
-    
     @top-center{
-      content: "";
-    }
-    
-    @top-right-corner{
-      content:"";
-      background:#000222;
-    }
-    
-    @right-top{
-      content:"";
-      background:#000222;
-    }
-    
-    @right-middle{
-      content:"";
-      background:#000222;
-    }
-    
-    @right-bottom{
-      content:"";
-      background:#000222;
+      content:element(coverLogo);
     }
 
     @bottom-right-corner{
@@ -158,8 +133,14 @@
       display:inline-block;
   }
 
+  
+  .logo-area .circle{
+    border:.4cm solid white;
+  }
+
   .logo-area h1,
   .last-logo-area h1{
+    text-align: left;
     display:inline-block;
       text-transform:uppercase;
       color:#000222;
@@ -170,29 +151,11 @@
       top:-.25cm; 
   }
 
-  .green-area{
-    background:#44b75b;
-      margin-left:-2cm;
-      width:210mm;
-      padding:2cm;
-  }
-
-  .green-area h1{
+  .cover h1{
       text-transform:uppercase;
-      color:#000222;
+      color:white;
     margin:0;
-  }
-
-  .green-area h2{
-      text-transform:uppercase;
-      color:#fff;
-    margin:0;
-  }
-
-  .green-area p{
-      color:#000222;
-      width:11cm;
-    margin-bottom:0;
+    text-align: center;
   }
 
   .cover{
@@ -200,10 +163,30 @@
       break-after:always;
   }
 
-  .cover img{
-      margin-left:-2cm;
-      width:15cm;
-      height:12.55cm;
+  .topics{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width:210mm;
+  }
+
+  .topics > div{
+    width:52.5mm;
+    height:52.5mm;
+    text-align: center;
+    display:inline-block;
+  }
+
+  .topics p{
+    font-weight:bold;
+    font-size:12pt;
+    margin:0;
+    padding:0;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
   }
 
   .last{
@@ -404,22 +387,22 @@
       padding:.75mm .75mm .75mm 1.5mm;
     }
 
-    .color-page-AC , .category-AC > h1 > span, .category-AC > .price > span, .intro-AC .green, .intro-AC::after, .category-AC::after, .toc-content h2.AC{ color:white !important;background:#00B8FE;}
-    .color-page-DC , .category-DC > h1 > span, .category-DC > .price > span, .intro-DC .green, .intro-DC::after, .category-DC::after, .toc-content h2.DC{ color:white !important;background:#DD7EE5;}
-    .color-page-FS , .category-FS > h1 > span, .category-FS > .price > span, .intro-FS .green, .intro-FS::after, .category-FS::after, .toc-content h2.FS{ color:white !important;background:#F28444;}
-    .color-page-KB , .category-KB > h1 > span, .category-KB > .price > span, .intro-KB .green, .intro-KB::after, .category-KB::after, .toc-content h2.KB{ color:white !important;background:#00BC94;}
-    .color-page-LT , .category-LT > h1 > span, .category-LT > .price > span, .intro-LT .green, .intro-LT::after, .category-LT::after, .toc-content h2.LT{ color:white !important;background:#8E97FF;}
-    .color-page-PR , .category-PR > h1 > span, .category-PR > .price > span, .intro-PR .green, .intro-PR::after, .category-PR::after, .toc-content h2.PR{ color:black !important;background:#FFF68E;}
-    .color-page-ST , .category-ST > h1 > span, .category-ST > .price > span, .intro-ST .green, .intro-ST::after, .category-ST::after, .toc-content h2.ST{ color:white !important;background:#FF8E97;}
-    .color-page-MI , .category-MI > h1 > span, .category-MI > .price > span, .intro-MI .green, .intro-MI::after, .category-MI::after, .toc-content h2.MI{ color:white !important;background:#E2A262;}
-    .color-page-CSA , .category-CSA > h1 > span, .category-CSA > .price > span, .intro-CSA .green, .intro-CSA::after, .category-CSA::after, .toc-content h2.CSA{ color:white !important;background:#C2A0F1;}
-    .color-page-GC , .category-GC > h1 > span, .category-GC > .price > span, .intro-GC .green, .intro-GC::after, .category-GC::after, .toc-content h2.GC{ color:black !important;background:#CFF1A0;}
-    .color-page-SC , .category-SC > h1 > span, .category-SC > .price > span, .intro-SC .green, .intro-SC::after, .category-SC::after, .toc-content h2.SC{ color:white !important;background:#ED2E32;}
-    .color-page-SP , .category-SP > h1 > span, .category-SP > .price > span, .intro-SP .green, .intro-SP::after, .category-SP::after, .toc-content h2.SP{ color:white !important;background:#883E46;}
-    .color-page-SW , .category-SW > h1 > span, .category-SW > .price > span, .intro-SW .green, .intro-SW::after, .category-SW::after, .toc-content h2.SW{ color:white !important;background:#917178;}
-    .color-page-TC , .category-TC > h1 > span, .category-TC > .price > span, .intro-TC .green, .intro-TC::after, .category-TC::after, .toc-content h2.TC{ color:white !important;background:#159A6B;}
-    .color-page-SV , .category-SV > h1 > span, .category-SV > .price > span, .intro-SV .green, .intro-SV::after, .category-SV::after, .toc-content h2.SV{ color:white !important;background:#656CDA;}
-    .color-page-FST , .category-FST > h1 > span, .category-FST > .price > span, .intro-FST .green, .intro-FST::after, .category-FST::after, .toc-content h2.FST{ color:white !important;background:#5565B0;}
+    .topics > div.AC, .color-page-AC , .category-AC > h1 > span, .category-AC > .price > span, .intro-AC .green, .intro-AC::after, .category-AC::after, .toc-content h2.AC{ color:white !important;background:#00B8FE;}
+    .topics > div.DC, .color-page-DC , .category-DC > h1 > span, .category-DC > .price > span, .intro-DC .green, .intro-DC::after, .category-DC::after, .toc-content h2.DC{ color:white !important;background:#DD7EE5;}
+    .topics > div.FS, .color-page-FS , .category-FS > h1 > span, .category-FS > .price > span, .intro-FS .green, .intro-FS::after, .category-FS::after, .toc-content h2.FS{ color:white !important;background:#F28444;}
+    .topics > div.KB, .color-page-KB , .category-KB > h1 > span, .category-KB > .price > span, .intro-KB .green, .intro-KB::after, .category-KB::after, .toc-content h2.KB{ color:white !important;background:#00BC94;}
+    .topics > div.LT, .color-page-LT , .category-LT > h1 > span, .category-LT > .price > span, .intro-LT .green, .intro-LT::after, .category-LT::after, .toc-content h2.LT{ color:white !important;background:#8E97FF;}
+    .topics > div.PR, .color-page-PR , .category-PR > h1 > span, .category-PR > .price > span, .intro-PR .green, .intro-PR::after, .category-PR::after, .toc-content h2.PR{ color:black !important;background:#FFF68E;}
+    .topics > div.ST, .color-page-ST , .category-ST > h1 > span, .category-ST > .price > span, .intro-ST .green, .intro-ST::after, .category-ST::after, .toc-content h2.ST{ color:white !important;background:#FF8E97;}
+    .topics > div.MI, .color-page-MI , .category-MI > h1 > span, .category-MI > .price > span, .intro-MI .green, .intro-MI::after, .category-MI::after, .toc-content h2.MI{ color:white !important;background:#E2A262;}
+    .topics > div.CSA, .color-page-CSA , .category-CSA > h1 > span, .category-CSA > .price > span, .intro-CSA .green, .intro-CSA::after, .category-CSA::after, .toc-content h2.CSA{ color:white !important;background:#C2A0F1;}
+    .topics > div.GC, .color-page-GC , .category-GC > h1 > span, .category-GC > .price > span, .intro-GC .green, .intro-GC::after, .category-GC::after, .toc-content h2.GC{ color:black !important;background:#CFF1A0;}
+    .topics > div.SC, .color-page-SC , .category-SC > h1 > span, .category-SC > .price > span, .intro-SC .green, .intro-SC::after, .category-SC::after, .toc-content h2.SC{ color:white !important;background:#ED2E32;}
+    .topics > div.SP, .color-page-SP , .category-SP > h1 > span, .category-SP > .price > span, .intro-SP .green, .intro-SP::after, .category-SP::after, .toc-content h2.SP{ color:white !important;background:#883E46;}
+    .topics > div.SW, .color-page-SW , .category-SW > h1 > span, .category-SW > .price > span, .intro-SW .green, .intro-SW::after, .category-SW::after, .toc-content h2.SW{ color:white !important;background:#917178;}
+    .topics > div.TC, .color-page-TC , .category-TC > h1 > span, .category-TC > .price > span, .intro-TC .green, .intro-TC::after, .category-TC::after, .toc-content h2.TC{ color:white !important;background:#159A6B;}
+    .topics > div.SV, .color-page-SV , .category-SV > h1 > span, .category-SV > .price > span, .intro-SV .green, .intro-SV::after, .category-SV::after, .toc-content h2.SV{ color:white !important;background:#656CDA;}
+    .topics > div.FST, .color-page-FST , .category-FST > h1 > span, .category-FST > .price > span, .intro-FST .green, .intro-FST::after, .category-FST::after, .toc-content h2.FST{ color:white !important;background:#5565B0;}
 
     .intro-AC blockquote, .intro-AC .green-border{ border-color:#00B8FE;}
     .intro-DC blockquote, .intro-DC .green-border{ border-color:#DD7EE5;}
