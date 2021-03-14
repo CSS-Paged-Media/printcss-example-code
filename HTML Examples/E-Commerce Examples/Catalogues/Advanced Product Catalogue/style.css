@@ -8,6 +8,11 @@ body{
 @page{
 	size:210mm 297mm;
   margin:1.5cm 1.5cm 1cm 1.5cm;
+
+  /*
+  @top-center{
+    content: counter(page);
+  }*/
 }
 
 @page:first{
@@ -19,7 +24,26 @@ body{
   	content:element(coverLogo);
   }
   
+  @top-center{
+    content: "";
+  }
+  
   @top-right-corner{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-top{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-middle{
+    content:"";
+  	background:#000222;
+  }
+  
+  @right-bottom{
     content:"";
   	background:#000222;
   }
@@ -56,6 +80,10 @@ body{
   margin:0 0 1cm 0;
   padding:0;
   
+  @top-center{
+    content: "";
+  }
+
   @bottom-right-corner{
     content:"";
   	background:#44b75b;
@@ -86,6 +114,10 @@ body{
 @page CenterImage{
   margin:1.5cm 1.5cm 1cm 1.5cm;
   
+  
+  @top-center{
+    content: "";
+  }
   
   @bottom-right-corner{
     content:"";
@@ -306,12 +338,8 @@ body{
 }
 
 .product .infos table th{
-  background-color:#44b75b;
+  background-color:lightgray;
   color:#000222;
-}
-
-.product .light{
-  color:#44b75b;
 }
 
 .product .price{
@@ -372,22 +400,22 @@ ul.toc {
 	  padding:.75mm .75mm .75mm 1.5mm;
   }
 
-  .intro-AC .green, .intro-AC::after, .category-AC::after, .toc-content h2.AC{ color:white !important;background:#00B8FE;}
-  .intro-DC .green, .intro-DC::after, .category-DC::after, .toc-content h2.DC{ color:white !important;background:#DD7EE5;}
-  .intro-FS .green, .intro-FS::after, .category-FS::after, .toc-content h2.FS{ color:white !important;background:#F28444;}
-  .intro-KB .green, .intro-KB::after, .category-KB::after, .toc-content h2.KB{ color:white !important;background:#00BC94;}
-  .intro-LT .green, .intro-LT::after, .category-LT::after, .toc-content h2.LT{ color:white !important;background:#8E97FF;}
-  .intro-PR .green, .intro-PR::after, .category-PR::after, .toc-content h2.PR{ color:black !important;background:#FFF68E;}
-  .intro-ST .green, .intro-ST::after, .category-ST::after, .toc-content h2.ST{ color:white !important;background:#FF8E97;}
-  .intro-MI .green, .intro-MI::after, .category-MI::after, .toc-content h2.MI{ color:white !important;background:#E2A262;}
-  .intro-CSA .green, .intro-CSA::after, .category-CSA::after, .toc-content h2.CSA{ color:white !important;background:#C2A0F1;}
-  .intro-GC .green, .intro-GC::after, .category-GC::after, .toc-content h2.GC{ color:black !important;background:#CFF1A0;}
-  .intro-SC .green, .intro-SC::after, .category-SC::after, .toc-content h2.SC{ color:white !important;background:#ED2E32;}
-  .intro-SP .green, .intro-SP::after, .category-SP::after, .toc-content h2.SP{ color:white !important;background:#883E46;}
-  .intro-SW .green, .intro-SW::after, .category-SW::after, .toc-content h2.SW{ color:white !important;background:#917178;}
-  .intro-TC .green, .intro-TC::after, .category-TC::after, .toc-content h2.TC{ color:white !important;background:#159A6B;}
-  .intro-SV .green, .intro-SV::after, .category-SV::after, .toc-content h2.SV{ color:white !important;background:#656CDA;}
-  .intro-FST .green, .intro-FST::after, .category-FST::after, .toc-content h2.FST{ color:white !important;background:#5565B0;}
+  .category-AC > h1 > span, .category-AC > .price > span, .intro-AC .green, .intro-AC::after, .category-AC::after, .toc-content h2.AC{ color:white !important;background:#00B8FE;}
+  .category-DC > h1 > span, .category-DC > .price > span, .intro-DC .green, .intro-DC::after, .category-DC::after, .toc-content h2.DC{ color:white !important;background:#DD7EE5;}
+  .category-FS > h1 > span, .category-FS > .price > span, .intro-FS .green, .intro-FS::after, .category-FS::after, .toc-content h2.FS{ color:white !important;background:#F28444;}
+  .category-KB > h1 > span, .category-KB > .price > span, .intro-KB .green, .intro-KB::after, .category-KB::after, .toc-content h2.KB{ color:white !important;background:#00BC94;}
+  .category-LT > h1 > span, .category-LT > .price > span, .intro-LT .green, .intro-LT::after, .category-LT::after, .toc-content h2.LT{ color:white !important;background:#8E97FF;}
+  .category-PR > h1 > span, .category-PR > .price > span, .intro-PR .green, .intro-PR::after, .category-PR::after, .toc-content h2.PR{ color:black !important;background:#FFF68E;}
+  .category-ST > h1 > span, .category-ST > .price > span, .intro-ST .green, .intro-ST::after, .category-ST::after, .toc-content h2.ST{ color:white !important;background:#FF8E97;}
+  .category-MI > h1 > span, .category-MI > .price > span, .intro-MI .green, .intro-MI::after, .category-MI::after, .toc-content h2.MI{ color:white !important;background:#E2A262;}
+  .category-CSA > h1 > span, .category-CSA > .price > span, .intro-CSA .green, .intro-CSA::after, .category-CSA::after, .toc-content h2.CSA{ color:white !important;background:#C2A0F1;}
+  .category-GC > h1 > span, .category-GC > .price > span, .intro-GC .green, .intro-GC::after, .category-GC::after, .toc-content h2.GC{ color:black !important;background:#CFF1A0;}
+  .category-SC > h1 > span, .category-SC > .price > span, .intro-SC .green, .intro-SC::after, .category-SC::after, .toc-content h2.SC{ color:white !important;background:#ED2E32;}
+  .category-SP > h1 > span, .category-SP > .price > span, .intro-SP .green, .intro-SP::after, .category-SP::after, .toc-content h2.SP{ color:white !important;background:#883E46;}
+  .category-SW > h1 > span, .category-SW > .price > span, .intro-SW .green, .intro-SW::after, .category-SW::after, .toc-content h2.SW{ color:white !important;background:#917178;}
+  .category-TC > h1 > span, .category-TC > .price > span, .intro-TC .green, .intro-TC::after, .category-TC::after, .toc-content h2.TC{ color:white !important;background:#159A6B;}
+  .category-SV > h1 > span, .category-SV > .price > span, .intro-SV .green, .intro-SV::after, .category-SV::after, .toc-content h2.SV{ color:white !important;background:#656CDA;}
+  .category-FST > h1 > span, .category-FST > .price > span, .intro-FST .green, .intro-FST::after, .category-FST::after, .toc-content h2.FST{ color:white !important;background:#5565B0;}
 
   .intro-AC blockquote, .intro-AC .green-border{ border-color:#00B8FE;}
   .intro-DC blockquote, .intro-DC .green-border{ border-color:#DD7EE5;}
@@ -411,7 +439,7 @@ ul.toc {
     break-before: left;
   }
 
-  .intro h1 .green { display:inline-block;padding:.75mm .75mm .75mm 1.5mm;}
+  .product > h1 > span, .product > .price > span, .intro h1 .green { display:inline-block;padding:.75mm .75mm .75mm 1.5mm;}
 
   .intro::after, .product::after{
     position: absolute;
