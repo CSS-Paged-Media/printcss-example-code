@@ -2,7 +2,7 @@
 
 @page{
     size:210mm 148mm;
-    margin:10mm 20mm 20mm 20mm;
+    margin:10mm 20mm 5mm 20mm;
     background:#44b75b;
 }
 
@@ -15,103 +15,133 @@
 }
 
 body{
-	font-family: 'Poppins', sans-serif;
-	margin:0;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
 }
 
 .cover{
-  page:cover;
-  background:white;
-  width:210mm;
-  margin-left:-2cm;
-  padding-left:2cm;
-  height:2cm;
-	text-transform:uppercase;
+    page:cover;
+    background:white;
+    width:210mm;
+    margin-left:-2cm;
+    padding-left:2cm;
+    height:2cm;
+    text-transform:uppercase;
 }
 
 .cover .circle{
-	width:1.5cm;
-	height:1.5cm;
-	border:.5cm solid #000222;
-	border-radius:100%;
-  display:inline-block;
-	position:relative;
-  top:-.25cm; 
+    width:1.5cm;
+    height:1.5cm;
+    border:.5cm solid #000222;
+    border-radius:100%;
+    display:inline-block;
+    position:relative;
+    top:-.25cm; 
 }
 
 .cover .logo-area h1{
-	display:inline-block;
-	color:#000222;
-	width:5cm;
-	line-height:1;
-	margin-left:0.25cm;
-	position:relative;
-  top:-.75cm; 
+    display:inline-block;
+    color:#000222;
+    width:5cm;
+    line-height:1;
+    margin-left:0.25cm;
+    position:relative;
+    top:-.75cm;
 }
 
 .cover h2,
 .cover h3{
-  margin:0;
-  line-height:1;
+    margin:0;
+    line-height:1;
 }
 
 .cover h2{
-  font-size:32pt;
-  width:10cm;
-  margin-top:1cm;
+    font-size:32pt;
+    width:10cm;
+    margin-top:1cm;
 }
 
 .cover h3{
-  font-size:24pt;
-  font-weight:normal;
-  color:white;
-  width:6cm;
+    font-size:24pt;
+    font-weight:normal;
+    color:white;
+    width:6cm;
 }
 
 .cover h4{
-  font-size:16pt;
-  margin-top:1cm;
+    font-size:16pt;
+    margin-top:1cm;
 }
 
 .report-page{
-  break-before:always;
+    break-before:always;
 }
 
 .white-page{
-  page:white;
+    page:white;
 }
 
 .report-page .white-stripe{
-  background:white;
-  width:210mm;
-  margin-left:-2cm;
-  padding-left:2cm;
-  height:2cm;
-	text-transform:uppercase;
+    background:white;
+    width:210mm;
+    margin-left:-2cm;
+    padding-left:2cm;
+    height:2cm;
+    text-transform:uppercase;
 }
 
 .white-page .white-stripe{
-  background:#44b75b;
+    background:#44b75b;
 }
 
 .report-page .white-stripe .circle{
-	width:1.5cm;
-	height:1.5cm;
-	border:.5cm solid #000222;
-	border-radius:100%;
-  display:inline-block;
-	position:relative;
-  top:-.25cm;
-  left:145mm;
+    width:1.5cm;
+    height:1.5cm;
+    border:.5cm solid #000222;
+    border-radius:100%;
+    display:inline-block;
+    position:relative;
+    top:-.25cm;
+    left:145mm;
 }
 
-.report-page h2{
-  margin:.5cm 0;
-	text-transform:uppercase;
-  line-height:1;
-  font-size:24pt;
+.report-page h2,
+.report-page h3{
+    margin:.5cm 0;
+    text-transform:uppercase;
+    line-height:1;
+    font-size:24pt;
+}
+
+.report-page h3{
+    margin:0;
+    color:white;
+    font-size:16pt;
 }
 
 .report-page h2 span{
-  font-weight:normal;
+    font-weight:normal;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+td{
+    width:50%;
+    vertical-align:top;
+}
+
+p{
+    margin:0;
+}
+
+img{
+    height:8cm;
+}
+
+figure{
+    margin:0;
+    text-align:center;
 }
