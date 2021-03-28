@@ -1,5 +1,3 @@
-## Not finished Example!
-
 ## Blog Post
 
 No Blog Post yet.
