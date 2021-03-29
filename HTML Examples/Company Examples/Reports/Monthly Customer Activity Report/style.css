@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@page{
+    size:216mm 356mm; /* https://formaty.info/en/LEGAL/ */
+    margin:10mm 20mm 5mm 20mm;
+    background:#44b75b;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    color:#000222;
+}
+
+.white-stripe{
+    background:white;
+    width:210mm;
+    margin-left:-2cm;
+    padding-left:2cm;
+    height:2cm;
+    text-transform:uppercase;
+}
+
+.white-stripe .circle{
+    width:1.5cm;
+    height:1.5cm;
+    border:.5cm solid #000222;
+    border-radius:100%;
+    display:inline-block;
+    position:relative;
+    top:-.25cm; 
+}
+
+.white-stripe .logo-area h1{
+    display:inline-block;
+    color:#000222;
+    width:5cm;
+    line-height:1;
+    margin-left:0.25cm;
+    position:relative;
+    top:-.75cm;
+}
+
+h2,
+h3{
+    width:176mm;
+    margin:0;
+    line-height:1;
+    text-align:center;
+}
+
+h2{
+    font-size:24pt;
+    margin-top:2cm;
+    text-transform:uppercase;
+}
+
+h3{
+    font-size:16pt;
+    font-weight:normal;
+    color:white;
+}
+
+.section-white{
+    width:176mm;
+    margin:10mm 0 5mm -20mm;
+    padding:5mm 20mm;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+}
+
+.section-white div{
+    width:85.5mm;
+}
+
+.section-white div h4{
+    background:#44b75b;
+    padding:2mm 6mm;
+    margin:0;
+}
+
+.section-white .dark{
+    box-sizing:border-box;
+    background:#000222;
+    color:white;
+    text-align:center;
+    border-top:1px solid white;
+    margin-bottom:5mm;
+    padding:2mm 6mm;
+}
+
+figure{
+    margin:0;
+}
+
+img{
+    max-width:100%;
+}
+
+table{
+    width:100%;
+}
+
+td{
+    text-align:right;
+}
+
+tr > td:first-of-type{
+    text-align:left;
+}
+
+.breakdown div{
+    display:flex;
+}
+
+.breakdown div p{
+    margin-right:15mm;
+}
+
+.reviews{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10mm;
+}
+
+.reviews div{
+    width:55mm;
+}
+
+.reviews div figure{
+    text-align:center;
+}
+
+.reviews div figure img{
+    width:20mm;
+    height:20mm;
+    border-radius:100%;
+    border:4px solid white;
+}
+
+blockquote{
+    margin:5mm 0;
+    text-align:justify;
+    font-style:italic;
+    color: white;
+    hyphens:auto;
+    line-height:1;
+}
+
+blockquote:before { 
+    content: open-quote;
+    color: white;
+}
+
+blockquote:after { 
+    content: close-quote;
+    color: white;
+}
