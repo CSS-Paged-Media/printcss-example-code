@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 @page{
-  size:74mm 105mm;
+  size:74mm 105mm; /* Format A7, https://formaty.info/en/A7/ */
   margin:0;
 }
 
