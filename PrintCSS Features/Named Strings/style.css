@@ -1,8 +1,8 @@
-@page  {
+@page{
     size: A6;
     margin: 20mm;
     
-    @top-center {
+    @top-center{
       content: string(chapterTitle, first);
     }
 }
