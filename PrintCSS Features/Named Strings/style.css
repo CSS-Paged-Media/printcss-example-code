@@ -1,0 +1,17 @@
+@page  {
+    size: A6;
+    margin: 20mm;
+    
+    @top-center {
+      content: string(chapterTitle, first);
+    }
+}
+
+h1{
+  break-before:always;
+  string-set: chapterTitle content();
+}
+
+h1:first-of-type{
+  break-before:none;
+}
