@@ -1,0 +1,8 @@
+@page{
+    size: A6;
+    margin: 20mm;
+}
+
+a::after {
+  content: ", in the chapter with the title: " target-text(attr(href url));
+}
