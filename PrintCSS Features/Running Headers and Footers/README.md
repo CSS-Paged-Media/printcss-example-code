@@ -1,6 +1,6 @@
 ## Blog Post
 
-[PrintCSS: Running Headers and Footers on PrintCSS.blog](https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62)
+[PrintCSS: Running Headers and Footers on PrintCSS.net](https://printcss.net/articles/running-headers-and-footers)
 
 ## Video
 

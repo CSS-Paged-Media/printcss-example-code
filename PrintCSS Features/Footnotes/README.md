@@ -1,6 +1,6 @@
 ## Blog Post
 
-[PrintCSS: Footnotes on PrintCSS.blog](https://medium.com/printcss/printcss-footnotes-9bb67fb2064b)
+[PrintCSS: Footnotes on PrintCSS.net](https://printcss.net/articles/footnotes)
 
 ## Video
 

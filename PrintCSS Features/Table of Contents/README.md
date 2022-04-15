@@ -1,6 +1,6 @@
 ## Blog Post
 
-[PrintCSS: Table of Contents on PrintCSS.blog](https://medium.com/printcss/printcss-table-of-contents-6156df7b5529)
+[PrintCSS: Table of Contents on PrintCSS.net](https://printcss.net/articles/table-of-contents)
 
 ## Video
 

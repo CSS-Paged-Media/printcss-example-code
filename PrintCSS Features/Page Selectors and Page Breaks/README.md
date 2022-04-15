@@ -1,6 +1,6 @@
 ## Blog Post
 
-[PrintCSS: Page Selectors and Page Breaks on PrintCSS.blog](https://medium.com/printcss/printcss-page-selectors-and-page-breaks-c9eff43e2653)
+[PrintCSS: Page Selectors and Page Breaks on PrintCSS.net](https://printcss.net/articles/page-selectors-and-page-breaks)
 
 ## Video
 

@@ -1,6 +1,6 @@
 ## Blog Post
 
-[PrintCSS: Recreating a eBook Cover on PrintCSS.blog](https://medium.com/printcss/printcss-recreating-a-ebook-cover-a7941fa0c619)
+[PrintCSS: Recreating a eBook Cover on PrintCSS.net](https://printcss.net/articles/recreating-a-ebook-cover)
 
 ## Video
 

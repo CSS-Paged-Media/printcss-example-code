@@ -1,6 +1,6 @@
 ## Blog Post
 
-[The string-set property and the string() function](https://printcss.blog/the-string-set-property-and-the-string-function-5fc8f73e413)
+[The string-set property and the string() function on PrintCSS.net](https://printcss.net/articles/the-string-set-property-and-the-string-function)
 
 ## Video
 
